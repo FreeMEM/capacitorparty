@@ -1,0 +1,49 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% block content %}
+
+            <!-- Work -->
+            <section class="works" id="work">
+                <div class="container-fluid">
+                   <div class="row">
+                      <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
+                         <span class="heading-meta">Ediciones</span>
+                         <span class="heading-meta-sub">EDICIONES</span>
+                         <h2>Ediciones anteriores</h2>
+                      </div>
+                   </div>
+ 
+                   <div class="page-section work-page">
+                      <div class="row">
+                         <div class="col-lg-2">
+                            <ul class="work-filter">
+                               <li class="filter all active" data-filter="*">Todas</li>
+                               {% for edition in editions %}
+                               <li class="filter" data-filter=".{{ edition.name.split|join:'_' }}">{{ edition.start|date:"Y" }}</li>
+                               {% endfor %}
+                            </ul>
+                         </div>
+                         
+                         <div class="col-lg-10">
+                            <div class="work-gallery">
+                              {% for picture in pictures.all %}
+                               <div class="work-item {{ picture.edition.name.split|join:'_' }}">
+                                  <img class="img-fluid" src="{{ picture.img.url }}" alt="">
+                                  <div class="hover-links">
+                                     <div class="con">
+                                        <h3><a href="work-single.html">{{ picture.edition.name }}</a></h3>
+                                        <span>{{ picture.edition.subtitle }}</span>
+                                     </div>
+                                  </div>
+                               </div>
+                              {% endfor %}
+                            </div>
+                         </div>
+ 
+                      </div>
+                   </div>
+                </div>
+             </section>
+             <!-- End Work -->
+
+{% endblock %}

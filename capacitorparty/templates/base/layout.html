@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="" />
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Capacitor Party | Recapped</title>
+      <!-- Bootstrap  -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+      <!-- Animate.css -->
+      <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+      <!-- Awesome Fonts-->
+      <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+      <!-- Flexslider  -->
+      <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+      <!-- owl.carusel -->
+      <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+      <!--Main Styles Css-->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   </head>
+   <body>
+      
+      <div id="page">
+
+         <!-- Preloader -->
+         <!-- <div class="preloader-wrapper">
+            <div class="preloader-wrapper-inner">
+               <div class="up"></div>
+               <div class="loading"></div>
+               <div class="down"></div>
+            </div>
+         </div> -->
+         <!-- End Preloader -->
+    
+         <a href="#" class="js-nav-toggle nav-toggle"><i></i></a>
+
+         <!-- Aside -->
+         <aside id="aside" class="border js-fullheight">
+
+            <!-- Logo -->
+            <h1 id="logo"><a href={% url 'index' %}><span>CAPACITOR</span><span>-||-</span><span>PARTY</span></a></h1>
+
+            <!-- Navigation -->
+            <nav id="main-menu">
+               <ul>
+                  {% for option in main_menu %}
+                     <li class="{{ option.active }}"><a href="{{ option.link }}">{{ option.option }}</a></li>
+                  {% endfor %}
+               </ul>
+            </nav>
+            <hr>
+            <div class="footer-aside">
+               <p><small>Copyright &copy; 2019 All rights reserved</small></p>
+               <!-- Social Media -->
+               <ul>
+                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+               </ul>
+            </div>
+         </aside>
+         <!-- End Aside -->
+
+         <div id="main">
+            <!-- Banner -->
+            {% block content %}
+            {% endblock %}
+            <!-- End Banner -->
+
+            <!-- Footer -->
+            <section id="main-footer" class="main-footer">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-lg-4 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                        <!-- Copyright -->
+                        <p class="footer-copyright">Copyright &copy; 2020 All rights reserved</p>
+                     </div>
+                     <div class="col-lg-4 animate-box fadeInLeft animated text-center" data-animate-effect="fadeInLeft">
+                        <!-- Footer Logo -->
+                        <h2 id="logo-footer"><a href={% url 'index' %}><span>CAPACITOR PARTY</span></a></h2>
+                     </div>
+                     <div class="col-lg-4 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                        <!-- Social Media -->
+                        <ul class="social-footer">
+                           <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                           <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- End Footer -->
+
+            <!-- Back to top button -->
+            <a id="back-to-top" href="#"><i class="fas fa-chevron-up"></i></a>
+
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <!-- Bootstrap -->
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <!-- Modernizr JS -->
+      <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+      <!-- Typed -->
+      <script src="{% static 'js/typed.min.js' %}"></script>
+      <!-- Particles -->
+      <script src="{% static 'js/particles.min.js' %}"></script>
+      <script src="{% static 'js/app.js' %}"></script>
+      <!-- Waypoints -->
+      <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+      <!-- Flexslider -->
+      <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+      <!-- owl.carusel -->
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <!-- isotope js -->
+      <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+      <!-- isotope image loader js -->
+      <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+      <!-- Sticky Kit -->
+      <script src="{% static 'js/sticky-kit.min.js' %}"></script>
+      <!-- custom js -->
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>

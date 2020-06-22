@@ -1,0 +1,170 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Banner -->
+    <section id="banner" class="js-fullheight">
+       <!-- Flexslider -->
+       <div class="flexslider js-fullheight">
+          <a class="btn btn-primary btn-learn" href="#contact">Let's talk</a>
+          <!-- particles.js -->
+          
+          <div id="particles-js"></div>
+          
+          <a href="#about" class="banner-about-down">
+            <span class="down-one">INFORMACIÓN</span>
+            <span class="down-two"></span>       
+          </a>
+
+          <ul class="slides">
+             <!-- Slide 1 -->
+             <li class="slide-img" style="background-image: url({% static 'images/amiga_sonido.jpg' %});">
+                <div class="overlay"></div>
+                <div class="container-fluid">
+                   <div class="row">
+                      <div class="col-md-8 js-fullheight slider-text">
+                         <div class="slider-text-inner">
+                            <div class="desc">
+                               <h2>Capacitor Party 2020</h2>
+                               <h3>La demoscene ha vuelto
+                                  <span id="typed-slide-1"></span>
+                                  <span id="typed-strings-slide-1">
+                                    <span>para quedarse</span>
+                                    <span>al Amiga</span>
+                                    <span>a ser grande</span>
+                                  </span>
+                               </h3>
+                               <div>Ya estamos en camino...</div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </li>
+             <!-- Slide 2 -->
+             <li class="slide-img" style="background-image: url({% static 'images/demo1.jpg' %})">
+                <div class="overlay"></div>
+                <div class="container-fluid">
+                   <div class="row">
+                      <div class="col-md-8 js-fullheight slider-text">
+                         <div class="slider-text-inner">
+                            <div class="desc">
+                               <h2>PRODUCCIONES</h2>
+                               <h3>La demoscene
+                                  <span id="typed-slide-2"></span>
+                                  <span id="typed-strings-slide-2">
+                                    <span>es Amiga</span>
+                                    <span>es el arte hacker</span>
+                                  </span>
+                               </h3>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </li>
+          </ul>
+          
+       </div>
+       <!-- End Flexslider -->
+    </section>
+    <!-- End Banner -->
+                <!-- About -->
+                <section class="about" id="about">
+                    <div class="container-fluid">
+                       <div class="row"> {% if current_party.logo %} 
+                          <div class="col-md-6">
+                             <div class="about-img-box animate-box" data-animate-effect="fadeInLeft">
+                                <div class="about-img animate-box" data-animate-effect="fadeInRight" style="background-image: url('{{ current_party.logo.url }}');"></div>
+                             </div>
+                          </div>
+                          {% endif %} 
+                          <div class="col-md-6 welcome-section animate-box" data-animate-effect="fadeInLeft">
+                             <div class="about-desc">
+                                <span class="heading-welcome">Información edición de {{ current_party.start|date:'Y' }}</span>
+                                <span class="heading-welcome-sub">Bienvenidos</span>
+                             </div>
+                             <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingOne">
+                                         <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{ current_party.name }}
+                                            </a>
+                                         </h4>
+                                      </div>
+                                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                         <div class="panel-body">
+                                            <div class="row">
+                                               <div class="col-md-12">
+                                                  <p>{{ current_party.description | safe }}</p>
+                                                  
+                                               </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingTwo">
+                                         <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                               Cuándo
+                                            </a>
+                                         </h4>
+                                      </div>
+                                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                         <div class="panel-body">
+                                            <div class="row">
+                                             <div class="col-md-6">
+                                                <div class="item mb-40">
+                                                   
+                                                   <span class="meta"> {{ current_party.start|date:'l d-m-Y H:i' }}</span>
+                                                   <h5 class="text-muted">Bienvenida</h5>
+                                                   <p>Recoge tu acreditación y toma sitio, nos esperan 4 increíbles días sin interrupciones</p>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                <div class="item mb-40">
+                                                   <span class="meta"> {{ current_party.end|date:'l d-m-Y H:i'}}</span>
+                                                   <h5 class="text-muted">Despedida</h5>
+                                                   <p>Esperamos que te hayas divertido con las compos. Nos vemos en la próxima edición!</p>
+                                                </div>
+                                             </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingThree">
+                                         <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Dónde
+                                            </a>
+                                         </h4>
+                                      </div>
+                                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                         <div class="panel-body">
+                                            <div class="row">
+                                                <div class="contact-detail text-center">
+                                                   <div class="icon">
+                                                      <i class="fas fa-map"></i>
+                                                   </div>
+                                                   <div class="content mt-3">
+                                                      <h4 class="text-uppercase">Location</h4>
+                                                      <p class="text-muted">{{ current_party.location | safe }}</p>
+                                                      <a href="{{ current_party.link_google_map }}" class="text-custom" target="_blank">View on Google map</a>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </section>
+                 <!-- End About -->
+
+
+    {% endblock %}
