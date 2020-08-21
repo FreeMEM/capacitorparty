@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from tinymce.models import HTMLField
 from defaults.models import BaseModel
+
 # Create your models here.
 
 
@@ -98,10 +99,11 @@ class Production(BaseModel):
     authors = models.ManyToManyField(Scener)
     date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    filepath = models.ForeignKey(File, on_delete=models.CASCADE,blank=True, null=True)
+    filepath = models.ForeignKey(File, on_delete=models.CASCADE, blank=True, null=True)
     classification = models.IntegerField(blank=True, null=True)
     preview = models.ImageField(upload_to='pictures', blank=True, null=True)
     videolink = models.CharField(max_length=200, blank=True, null=True)
+    edition = models.ForeignKey('editions.Edition', blank=True, null=True, on_delete=models.SET_NULL)
 
     def publish(self):
         self.published_date = timezone.now()
