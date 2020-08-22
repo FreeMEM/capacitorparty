@@ -4,7 +4,7 @@ from productions.models import Production, ScenersGroup, Scener, Organizer, Role
 # Register your models here.
 
 class ProductionAdmin(admin.ModelAdmin):
-    list_display = ("id", "title", "production_type",)
+    list_display = ("id", "title", "production_type","edition")
 
 
 admin.site.register(Production, ProductionAdmin)

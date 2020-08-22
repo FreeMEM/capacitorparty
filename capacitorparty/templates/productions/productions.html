@@ -3,8 +3,12 @@
 {% block content %}
 
 <div class="row">
+</div>   
 
     {% for production in productions %}
+    {% if forloop.counter|divisibleby:2 %}
+    <div class="row">
+    {% endif %}
     <div class="col-md-4 col-sm-6">
        <div class="blog-entry">
           
@@ -17,10 +21,17 @@
             {% endif %}
             <div class="content-info">
                <div class="row item">
-                  <div class="col-md-6 single-info item">
+
+                  <div class="col-md-6 single-info">
                      <span style="color: #00ebab; text-transform: uppercase;">Nombre de producción:</span>
                      <p>{{ production.title }}</p>
                   </div>
+                  {% if production.classification %}
+                  <div class="col-md-6 single-info">
+                     <span style="color: #00ebab; text-transform: uppercase;">Clasificación:</span>
+                     <p>{{ production.classification }}</p>
+                  </div>
+                  {% endif %}
                   <div class="col-md-6 single-info">
                      <span style="color: #00ebab; text-transform: uppercase;">Tipo:</span>
                      <p>{{ production.get_production_type_display }}</p>
@@ -61,7 +72,15 @@
           </div>
        </div>
     </div>
+    {% if forloop.counter|divisibleby:2 %}
+    </div>
+    {% else %}
+      {% if forloop.last %}
+         </div>
+      {% endif %}  
+    {% endif %}
     {% endfor %}   
- </div>
+    <div class="row">
+   </div>
  <hr/>
  {% endblock %}
