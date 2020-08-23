@@ -1,0 +1,2643 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$248MZPjw6aNz$sJ5O7xcNXG5dlTw+CRmqCTT/h3GuVXispFKAPvQmvYw=",
+        "last_login": "2020-08-16T15:48:15.372Z",
+        "is_superuser": true,
+        "username": "freemem",
+        "first_name": "",
+        "last_name": "",
+        "email": "freemem@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-04-19T12:34:05.846Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1elpck8bhs0xok2trbuq59b06351cvtl",
+    "fields": {
+        "session_data": "YjRlMWQyMGM0ZDliMmJjOGM2OTRmNTRiMDVkZWZmOWI0MjEwMDFlNTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YjMyMjNhZDhlNjkxMzdhMGE4MjVjZTFjODMwYWE1MDQ5OTAzNDA1In0=",
+        "expire_date": "2020-05-27T12:03:30.164Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9wqau6bdwh7w60fvu4uqhj9516kgdgl9",
+    "fields": {
+        "session_data": "YjRlMWQyMGM0ZDliMmJjOGM2OTRmNTRiMDVkZWZmOWI0MjEwMDFlNTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YjMyMjNhZDhlNjkxMzdhMGE4MjVjZTFjODMwYWE1MDQ5OTAzNDA1In0=",
+        "expire_date": "2020-06-21T10:40:08.922Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hq92v39fgmuuklmcjrh88kekq5g7xpkq",
+    "fields": {
+        "session_data": "YjRlMWQyMGM0ZDliMmJjOGM2OTRmNTRiMDVkZWZmOWI0MjEwMDFlNTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YjMyMjNhZDhlNjkxMzdhMGE4MjVjZTFjODMwYWE1MDQ5OTAzNDA1In0=",
+        "expire_date": "2020-05-03T12:34:34.731Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "l6ghr5fx81xvhzkm7ox7xgk91nkpvdxb",
+    "fields": {
+        "session_data": "YjRlMWQyMGM0ZDliMmJjOGM2OTRmNTRiMDVkZWZmOWI0MjEwMDFlNTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YjMyMjNhZDhlNjkxMzdhMGE4MjVjZTFjODMwYWE1MDQ5OTAzNDA1In0=",
+        "expire_date": "2020-08-30T15:48:15.530Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "x6xfew6d7h9t1dm2ymrw8p1bauvboc1r",
+    "fields": {
+        "session_data": "YjRlMWQyMGM0ZDliMmJjOGM2OTRmNTRiMDVkZWZmOWI0MjEwMDFlNTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0YjMyMjNhZDhlNjkxMzdhMGE4MjVjZTFjODMwYWE1MDQ5OTAzNDA1In0=",
+        "expire_date": "2020-07-06T17:44:47.870Z"
+    }
+},
+{
+    "model": "productions.role",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-05-23T22:37:00.967Z",
+        "modified_at": "2020-05-23T22:37:00.968Z",
+        "name": "Coder",
+        "description": ""
+    }
+},
+{
+    "model": "productions.role",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-05-23T22:37:12.793Z",
+        "modified_at": "2020-05-23T22:37:12.793Z",
+        "name": "Grafista",
+        "description": ""
+    }
+},
+{
+    "model": "productions.role",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-05-23T22:37:21.465Z",
+        "modified_at": "2020-05-23T22:37:21.465Z",
+        "name": "M\u00fasico",
+        "description": ""
+    }
+},
+{
+    "model": "productions.organizerrole",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-04-23T11:30:51.964Z",
+        "modified_at": "2020-04-23T11:30:51.964Z",
+        "name": "Developer",
+        "description": ""
+    }
+},
+{
+    "model": "productions.organizerrole",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-05-23T22:58:25.216Z",
+        "modified_at": "2020-05-23T22:58:25.216Z",
+        "name": "Organizador",
+        "description": ""
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-06-07T11:58:00.893Z",
+        "modified_at": "2020-06-07T11:58:00.893Z",
+        "name": "Zener",
+        "description": "",
+        "roles": [
+            1
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-06-07T11:59:03.568Z",
+        "modified_at": "2020-06-07T11:59:03.568Z",
+        "name": "Skynet",
+        "description": "",
+        "roles": [
+            1
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-06-07T11:59:33.002Z",
+        "modified_at": "2020-06-07T11:59:33.002Z",
+        "name": "Sandman",
+        "description": "",
+        "roles": [
+            2
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 4,
+    "fields": {
+        "created_at": "2020-06-07T11:59:53.384Z",
+        "modified_at": "2020-06-07T11:59:53.384Z",
+        "name": "ToniGalvez",
+        "description": "",
+        "roles": [
+            2
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 5,
+    "fields": {
+        "created_at": "2020-06-07T12:00:33.784Z",
+        "modified_at": "2020-06-07T12:00:33.784Z",
+        "name": "F1REB0Y",
+        "description": "",
+        "roles": [
+            3
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 6,
+    "fields": {
+        "created_at": "2020-06-07T12:00:46.983Z",
+        "modified_at": "2020-06-07T12:00:46.983Z",
+        "name": "Neuroflip",
+        "description": "",
+        "roles": [
+            3
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 7,
+    "fields": {
+        "created_at": "2020-08-22T10:16:14.107Z",
+        "modified_at": "2020-08-22T10:16:14.107Z",
+        "name": "Birra",
+        "description": "",
+        "roles": [
+            1
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 8,
+    "fields": {
+        "created_at": "2020-08-22T10:16:33.412Z",
+        "modified_at": "2020-08-22T10:16:33.412Z",
+        "name": "Tom",
+        "description": "",
+        "roles": [
+            1
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 9,
+    "fields": {
+        "created_at": "2020-08-22T10:16:48.554Z",
+        "modified_at": "2020-08-22T10:16:48.554Z",
+        "name": "Zoltar",
+        "description": "",
+        "roles": [
+            3
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 10,
+    "fields": {
+        "created_at": "2020-08-22T11:07:06.999Z",
+        "modified_at": "2020-08-22T11:07:06.999Z",
+        "name": "Ham",
+        "description": "",
+        "roles": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "productions.scener",
+    "pk": 11,
+    "fields": {
+        "created_at": "2020-08-22T11:08:04.458Z",
+        "modified_at": "2020-08-22T11:08:04.458Z",
+        "name": "Ham",
+        "description": "",
+        "roles": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "productions.organizer",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-04-23T11:30:55.578Z",
+        "modified_at": "2020-05-24T11:52:40.835Z",
+        "name": "FreeMEM",
+        "description": "",
+        "roles": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "productions.organizer",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-05-23T22:58:34.522Z",
+        "modified_at": "2020-05-23T22:58:34.522Z",
+        "name": "Pozo",
+        "description": "",
+        "roles": [
+            2
+        ]
+    }
+},
+{
+    "model": "productions.organizer",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-05-24T11:51:33.250Z",
+        "modified_at": "2020-05-24T11:51:33.250Z",
+        "name": "TecniMan",
+        "description": "",
+        "roles": [
+            2
+        ]
+    }
+},
+{
+    "model": "productions.organizer",
+    "pk": 4,
+    "fields": {
+        "created_at": "2020-05-24T11:52:26.308Z",
+        "modified_at": "2020-05-24T11:52:26.308Z",
+        "name": "Rastan",
+        "description": "",
+        "roles": [
+            2
+        ]
+    }
+},
+{
+    "model": "productions.scenersgroup",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-06-07T12:01:04.299Z",
+        "modified_at": "2020-06-07T12:01:04.299Z",
+        "name": "Obsolete",
+        "description": "",
+        "member": [
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+        ]
+    }
+},
+{
+    "model": "productions.scenersgroup",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-08-22T11:07:12.116Z",
+        "modified_at": "2020-08-22T11:07:12.116Z",
+        "name": "Software Failure",
+        "description": "",
+        "member": [
+            10
+        ]
+    }
+},
+{
+    "model": "productions.scenersgroup",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-08-22T11:21:36.563Z",
+        "modified_at": "2020-08-22T11:21:36.563Z",
+        "name": "Goblins",
+        "description": "",
+        "member": [
+            9,
+            7
+        ]
+    }
+},
+{
+    "model": "productions.file",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-06-07T12:07:59.389Z",
+        "modified_at": "2020-06-07T12:07:59.389Z",
+        "name": "C4p4citor Invitro",
+        "path": "files/c4p4citor_realfinal.lha",
+        "description": ""
+    }
+},
+{
+    "model": "productions.file",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-08-22T10:20:45.206Z",
+        "modified_at": "2020-08-22T10:20:45.206Z",
+        "name": "La rutina sibilina",
+        "path": "files/Goblins-LaRutinaSibilina.lha",
+        "description": "<pre class=\"amiga-medres\" style=\"margin: 0px; padding: 0px; text-shadow: #224466 4px 4px; white-space: pre-wrap; line-height: 1em; font-family: topaz; font-size: 16px; color: #ffffff; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">   &gt;&gt;&gt;&gt;  G O B L I N S  &lt;&lt;&lt;&lt;\r\n\r\n       La Rutina Sibilida\r\n\r\n Our contribution to Capacitor 2019\r\n\r\n  Code  .......... Birra &amp; Tom\r\n  Music .......... Zoltar\r\n\r\n\r\nThis is the \"final\" version of the demo.\r\n\r\nSpecial greetings to HAM, the man behind the \r\namiga spanish scene, Lier (Zurito/Goblins) and\r\nMalen (Radler/Goblins).</pre>"
+    }
+},
+{
+    "model": "productions.file",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-08-22T11:10:26.009Z",
+        "modified_at": "2020-08-22T11:10:26.009Z",
+        "name": "Blue Artifact",
+        "path": "files/SFL-BlueArtifact.lha",
+        "description": "<pre class=\"amiga-medres\" style=\"margin: 0px; padding: 0px; text-shadow: #224466 4px 4px; white-space: pre-wrap; line-height: 1em; font-family: topaz; font-size: 16px; color: #ffffff; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">   &gt; S o f t w a r e    F a i l u r e &lt;\r\n\r\n           &middot;[ Blue Artifact ]&middot;\r\n\r\n    &middot; A 40K intro for Capacitor 2019 &middot;\r\n\r\n      Code, GFX &amp; Music .......  Ham\r\n\r\n   This intro needs OCS and 1Mb of RAM.\r\n         A 68020 is recommended.\r\n\r\n              November 2019\r\n\r\n              Final version!</pre>"
+    }
+},
+{
+    "model": "productions.production",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-06-07T12:12:17.582Z",
+        "modified_at": "2020-08-22T10:48:57.106Z",
+        "title": "C4p4citor Invitro",
+        "description": "<pre class=\"amiga-medres\" style=\"margin: 0px; padding: 0px; text-shadow: #224466 4px 4px; white-space: pre-wrap; line-height: 1em; font-family: topaz; font-size: 16px; color: #ffffff; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"> OBSOLETE Presents\r\n\r\n C4P4CITOR INVITRO         \r\n\r\n      Fireboy\r\n        God\r\n      Skynet\r\n      Sandman\r\n     Neuroflip\r\n    Toni Galvez\r\n       Zener\r\n \r\n    060/FPU/AGA\r\n LONG DECOMPRESSION</pre>",
+        "group": 1,
+        "production_type": "3",
+        "date": "2019-09-30T22:00:00Z",
+        "published_date": "2019-09-30T22:00:00Z",
+        "filepath": 1,
+        "classification": 0,
+        "preview": "pictures/Screenshot_2020-06-07_at_13.55.01.png",
+        "videolink": "https://www.youtube.com/watch?v=Ic4j5C8xh5Y",
+        "edition": 1,
+        "authors": [
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+        ]
+    }
+},
+{
+    "model": "productions.production",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-08-22T10:23:40.428Z",
+        "modified_at": "2020-08-22T11:21:55.976Z",
+        "title": "La rutina sibilina",
+        "description": "<pre class=\"amiga-medres\" style=\"margin: 0px; padding: 0px; text-shadow: #224466 4px 4px; white-space: pre-wrap; line-height: 1em; font-family: topaz; font-size: 16px; color: #ffffff; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">   &gt;&gt;&gt;&gt;  G O B L I N S  &lt;&lt;&lt;&lt;\r\n\r\n       La Rutina Sibilida\r\n\r\n Our contribution to Capacitor 2019\r\n\r\n  Code  .......... Birra &amp; Tom\r\n  Music .......... Zoltar\r\n\r\n\r\nThis is the \"final\" version of the demo.\r\n\r\nSpecial greetings to HAM, the man behind the \r\namiga spanish scene, Lier (Zurito/Goblins) and\r\nMalen (Radler/Goblins).</pre>",
+        "group": 3,
+        "production_type": "3",
+        "date": "2019-10-28T11:15:23Z",
+        "published_date": "2019-10-28T11:15:23Z",
+        "filepath": 2,
+        "classification": 1,
+        "preview": "pictures/rutina_sibilina_screenshot.jpg",
+        "videolink": "https://www.youtube.com/watch?v=BxetUNSGoVA",
+        "edition": 1,
+        "authors": [
+            9,
+            8,
+            7
+        ]
+    }
+},
+{
+    "model": "productions.production",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-08-22T11:12:12.427Z",
+        "modified_at": "2020-08-22T11:12:12.427Z",
+        "title": "Blue Artifact",
+        "description": "<pre class=\"amiga-medres\" style=\"margin: 0px; padding: 0px; text-shadow: #224466 4px 4px; white-space: pre-wrap; line-height: 1em; font-family: topaz; font-size: 16px; color: #ffffff; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">   &gt; S o f t w a r e    F a i l u r e &lt;\r\n\r\n           &middot;[ Blue Artifact ]&middot;\r\n\r\n    &middot; A 40K intro for Capacitor 2019 &middot;\r\n\r\n      Code, GFX &amp; Music .......  Ham\r\n\r\n   This intro needs OCS and 1Mb of RAM.\r\n         A 68020 is recommended.\r\n\r\n              November 2019\r\n\r\n              Final version!</pre>",
+        "group": 2,
+        "production_type": "4",
+        "date": "2019-10-31T12:04:48Z",
+        "published_date": "2019-12-03T11:00:00Z",
+        "filepath": 3,
+        "classification": 2,
+        "preview": "pictures/Captura_de_pantalla_de_2020-08-22_13-11-33.png",
+        "videolink": "https://www.youtube.com/watch?v=bc1Yor5nSe8&t=34s",
+        "edition": 1,
+        "authors": [
+            11
+        ]
+    }
+},
+{
+    "model": "editions.sponsor",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-04-23T11:29:47.279Z",
+        "modified_at": "2020-04-23T11:29:47.279Z",
+        "name": "AmigaStore",
+        "description": ""
+    }
+},
+{
+    "model": "editions.edition",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-04-23T11:32:46.868Z",
+        "modified_at": "2020-05-24T18:41:00.580Z",
+        "name": "Capacitor Party 2019",
+        "subtitle": "Tantalum People",
+        "start": "2019-11-01T10:00:00Z",
+        "end": "2019-11-03T14:00:00Z",
+        "description": "<p style=\"text-align: justify;\">Llega la esperada cuarta edici&oacute;n de la Capacitor Party 2019 &ndash; Tantalum People.</p>\r\n<p style=\"text-align: justify;\">Se celebrar&aacute; los pr&oacute;ximos 1 ,2 y 3 de noviembre en <a href=\"https://www.google.com/maps/place/La+F%C3%A1brica+del+Videojuego/@36.71106,-4.4703917,17z/data=!4m12!1m6!3m5!1s0xd72f7354a13c349:0xd3e5220f8142048a!2sLa+F%C3%A1brica+del+Videojuego!8m2!3d36.71106!4d-4.468203!3m4!1s0xd72f7354a13c349:0xd3e5220f8142048a!8m2!3d36.71106!4d-4.468203\"><strong>La Fabrica Del VideoJuego</strong></a> (M&aacute;laga).</p>\r\n<p style=\"text-align: justify;\">Esta edici&oacute;n viene cargada de novedades contando con un d&iacute;a m&aacute;s de evento y m&aacute;s categor&iacute;as para las competiciones.</p>",
+        "published_productions": false,
+        "logo": "pictures/FLYERS-10x15.jpg",
+        "location": "<p>En la F&aacute;brica del Videojuego,</p>\r\n<p>Calle Marea Baja, 3, 29006 M&aacute;laga, Espa&ntilde;a</p>",
+        "link_google_map": "https://www.google.com/maps/place/La+F%C3%A1brica+del+Videojuego/@36.71106,-4.468203,15z/data=!4m5!3m4!1s0x0:0xd3e5220f8142048a!8m2!3d36.71106!4d-4.468203",
+        "sponsors": [
+            1
+        ],
+        "organizers": [
+            1
+        ]
+    }
+},
+{
+    "model": "editions.edition",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-05-17T16:57:33.392Z",
+        "modified_at": "2020-05-24T18:40:00.006Z",
+        "name": "Capacitor Party 2020",
+        "subtitle": "Demoscene reloaded",
+        "start": "2020-10-30T14:00:00Z",
+        "end": "2020-11-02T11:00:00Z",
+        "description": "<p>&nbsp;</p>\r\n<p>Estamos en camino!</p>\r\n<p>&nbsp;</p>\r\n<p>La Capacitor Party es un evento multiplataforma que fue creada con la intenci&oacute;n de reunir a usuarios de plataformas retro (Amiga, Spectrum, Amstrad, Commodore, Atari, MSX, Apple Classics&hellip;). Pretendemos recuperar el esp&iacute;ritu de las partys de anta&ntilde;o y sus producciones.</p>",
+        "published_productions": false,
+        "logo": "pictures/IMG_20191101_142041_9nMOX0c.jpg",
+        "location": "<p>En la F&aacute;brica del Videojuego,</p>\r\n<p>Calle Marea Baja, 3, 29006 M&aacute;laga, Espa&ntilde;a</p>",
+        "link_google_map": "https://www.google.com/maps/place/La+F%C3%A1brica+del+Videojuego/@36.71106,-4.468203,15z/data=!4m5!3m4!1s0x0:0xd3e5220f8142048a!8m2!3d36.71106!4d-4.468203",
+        "sponsors": [
+            1
+        ],
+        "organizers": [
+            1,
+            3
+        ]
+    }
+},
+{
+    "model": "editions.edition",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-05-17T20:14:26.572Z",
+        "modified_at": "2020-05-23T22:58:50.141Z",
+        "name": "Capacitor Party  2017",
+        "subtitle": "Recapped",
+        "start": "2017-11-02T20:13:32Z",
+        "end": "2017-11-04T20:14:11Z",
+        "description": "<p>La Capacitor Party 3 &ldquo;Recapped&rdquo; la planteamos ya no solo como una party con campeonatos de juegos, quisimos elevarla al siguiente nivel y decidimos cuatro concursos para animar a la gente a crear material nuevo. Organizamos concursos de M&uacute;sica, Gr&aacute;ficos, Demos y Juegos. Los patrocinadores aumentaron su colaboraci&oacute;n y nos pudimos permitir cuatro trofeos personalizados de medio metro de alto, medallas para todos los que se presentaran a concursos, un premio Momochan al Amiguero del a&ntilde;o mejorado (que otorgamos a Zener), y detalles como tarjetas de identificaci&oacute;n de todos los asistentes que confirmasen. Tambi&eacute;n aument&oacute; el nivel de donaciones para los sorteos y tanto Edu como AmigaStore contribuyeron con hardware y software alucinantes, al igual que AmigaWave que no solo retransmiti&oacute; el evento en directo sino que regal&oacute; estupendas camisetas. De nuevo menci&oacute;n especial para el grupo de Gamepolis, que acogi&oacute; la party en su sede NEXT resultando en la primera Capacitor Party completamente subvencionada, debido a lo cual los asistentes no tuvieron que aportar nada en absoluto.</p>\r\n<p><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/31.jpg\"><img class=\"size-medium wp-image-162 alignnone\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/31-300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" /></a><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/32.jpg\"><img class=\"alignright size-medium wp-image-163\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/32-300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" /></a><br /> La Capacitor Party 3 tambi&eacute;n fue multisistema, y por primera vez dur&oacute; dos d&iacute;as. Al igual que en la 2, algunos asistentes de fuera de M&aacute;laga llegaron la noche antes, con lo que para algunos de nosotros dur&oacute; a&uacute;n m&aacute;s. Esa noche recogimos a algunos viajeros en distintos puntos y nos reunimos para la cena pre-party.</p>\r\n<p>El primer d&iacute;a comenzamos puntualmente y la primera noche nos extendimos m&aacute;s de lo previsto en un principio, porque fue el d&iacute;a grande con las presentaciones de los trabajos a concursos. Recibimos una cantidad de trabajos muy superior a lo que hab&iacute;amos estimado. Adem&aacute;s la calidad de esas producciones fue tremendamente alta. Incluso tuvimos varias aportaciones fuera de concurso, con lo que el &eacute;xito fue mas que evidente.</p>\r\n<p><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/34.jpg\"><img class=\"aligncenter size-large wp-image-165\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/34-1024x768.jpg\" alt=\"\" width=\"680\" height=\"510\" /></a></p>\r\n<p>Ese primer d&iacute;a estuvo mayormente centrado en pulir las producciones antes de la deadline, aunque evidentemente tambi&eacute;n hubo cacharreo. El segundo d&iacute;a fue de party tradicional y acab&oacute; con los sorteos de los regalos y las donaciones. Hubo tantos que casi todo el mundo recibi&oacute; algo.</p>\r\n<p><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/35.jpg\"><img class=\"size-medium wp-image-166 alignnone\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/35-300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" /></a><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/36.jpg\"><img class=\"alignright size-medium wp-image-167\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/36-300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" /></a></p>\r\n<p>En un principio la Capacitor Party 3 se iba a celebrar en la EVAD (Escuela Superior de Videojuegos y Arte Digital, en M&aacute;laga), que nos ced&iacute;a varias de sus aulas. Conforme se fue acercando la fecha del evento comprobamos que las solicitudes de reserva con equipo eran mayores a&uacute;n de lo que hab&iacute;amos esperado, as&iacute; que dimos la noticia del cambio a la sede de NEXT, que cuenta con un local de m&aacute;s de 600 metros cuadrados, y donde pudimos usar dos grandes salas y la zona de proyecci&oacute;n para la presentaci&oacute;n de las producciones. A&uacute;n as&iacute;, tuvimos que cerrar las solicitudes con equipo, de nuevo se nos qued&oacute; peque&ntilde;o el espacio. Hubo ordenadores que nos quedamos con las ganas de montar, como por ejemplo los 4 C64 con los que pens&aacute;bamos proyectar la m&iacute;tica demo con los commodore sincronizados. El resultado fue de unos 45 equipos y sobre 180 personas entre asistentes con equipo, sin equipo y visitantes.</p>\r\n<p><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/33.jpg\"><img class=\"size-medium wp-image-164 alignnone\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/33-300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" /></a><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/IMG_8734-.jpg\"><img class=\"alignright size-medium wp-image-195\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/IMG_8734--300x225.jpg\" alt=\"\" width=\"300\" height=\"225\" /></a></p>\r\n<p>En esta ocasi&oacute;n tuvimos la inestimable ayuda en las salas de las azafatas Amber, AGA, Denise, Paula y Akiko. Los patrocinadores de este a&ntilde;o fueron AmigaStore, AmigaWave, FreeMEM, Dr. Hyde, Asesor&iacute;a Fernando de la Cruz, Procurador Carlos Buxo Narv&aacute;ez, Bar Tequila C&aacute;rtama, Gamepolis, EVAD y NEXT. Adem&aacute;s tuvimos donaciones de Edu Arana, Amiga Wave y otras personas que prefieren quedar en el anonimato.</p>\r\n<p><a href=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/40-PATROCINADORES-CAPACITOR-3.jpg\"><img class=\"aligncenter size-full wp-image-168\" src=\"https://www.capacitorparty.com/wp-content/uploads/2018/08/40-PATROCINADORES-CAPACITOR-3.jpg\" alt=\"\" width=\"747\" height=\"250\" /></a></p>\r\n<p>En esta party asistieron varios grandes grupos de la escena, y la organizaci&oacute;n lo aprovechamos para plantar la semilla de la sana competencia entre ellos para una futura Capacitor 4. De hecho Batman Group &ldquo;se pic&oacute;&rdquo; al ver la demo ganadora del concurso, la impresionante Plastic Toys Are Forever con 3D de Sandman, gr&aacute;ficos de God, m&uacute;sica de Neuroflip y c&oacute;digo de Skynet. Debido a esto y para apoyar y amplificar esa competencia dimos un empuj&oacute;n a los Batman haciendo que el logo azul del condensador de la Capacitor se Batmanizase y pasara a ser negro un tiempo. Los Batman aceptaron el reto de presentar demo en Capacitor 4, y aunque Batman Group es un grupo grande con varios coders nos lleg&oacute; el rumor de que Rhino no estaba por la labor. Para animarle y comprometerle promovimos la iniciativa de las fotos de amigueros &ldquo;Llamando a Rhino&rdquo; con las que se hizo un v&iacute;deo motivador directamente dirigido a &eacute;l. Dicen los rumores que acept&oacute;&hellip; aunque sin fecha concreta.</p>",
+        "published_productions": false,
+        "logo": "pictures/Screenshot_2020-05-23_at_09.40.46.png",
+        "location": null,
+        "link_google_map": null,
+        "sponsors": [
+            1
+        ],
+        "organizers": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 1,
+    "fields": {
+        "created_at": "2020-05-23T16:51:12.974Z",
+        "modified_at": "2020-05-23T16:51:12.975Z",
+        "img": "pictures/IMG_2280_cnt19Kn.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 2,
+    "fields": {
+        "created_at": "2020-05-23T16:51:28.377Z",
+        "modified_at": "2020-05-23T16:51:28.377Z",
+        "img": "pictures/IMG_2291_SWnGKuI.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 3,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.114Z",
+        "modified_at": "2020-05-23T16:53:58.114Z",
+        "img": "pictures/IMG_2292_XBv7zEG.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 4,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.115Z",
+        "modified_at": "2020-05-23T16:53:58.115Z",
+        "img": "pictures/IMG_2308_K6mL3yN.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 5,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.117Z",
+        "modified_at": "2020-05-23T16:53:58.117Z",
+        "img": "pictures/IMG_2314_6MLqoMF.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 6,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.117Z",
+        "modified_at": "2020-05-23T16:53:58.118Z",
+        "img": "pictures/IMG_8664_VKR3TX1.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 7,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.119Z",
+        "modified_at": "2020-05-23T16:53:58.119Z",
+        "img": "pictures/IMG_8677_ItXMcat.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 8,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.120Z",
+        "modified_at": "2020-05-23T16:53:58.120Z",
+        "img": "pictures/IMG_8690_YtVG3Ib.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 9,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.120Z",
+        "modified_at": "2020-05-23T16:53:58.120Z",
+        "img": "pictures/IMG_8696_T7TeFMh.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 10,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.121Z",
+        "modified_at": "2020-05-23T16:53:58.121Z",
+        "img": "pictures/IMG_8700_xTVqdCs.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 11,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.122Z",
+        "modified_at": "2020-05-23T16:53:58.122Z",
+        "img": "pictures/IMG_8703_bxMzg5N.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 12,
+    "fields": {
+        "created_at": "2020-05-23T16:53:58.123Z",
+        "modified_at": "2020-05-23T16:53:58.123Z",
+        "img": "pictures/IMG_8764_NHDnHAc.JPG",
+        "edition": 3
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 13,
+    "fields": {
+        "created_at": "2020-05-23T22:31:23.997Z",
+        "modified_at": "2020-05-23T22:31:23.997Z",
+        "img": "pictures/2020-05-24_00.20.38.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 14,
+    "fields": {
+        "created_at": "2020-05-23T22:31:23.998Z",
+        "modified_at": "2020-05-23T22:31:23.998Z",
+        "img": "pictures/2020-05-24_00.22.58.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 15,
+    "fields": {
+        "created_at": "2020-05-23T22:31:23.999Z",
+        "modified_at": "2020-05-23T22:31:23.999Z",
+        "img": "pictures/2020-05-24_00.24.30.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 16,
+    "fields": {
+        "created_at": "2020-05-23T22:31:23.999Z",
+        "modified_at": "2020-05-23T22:31:23.999Z",
+        "img": "pictures/2020-05-24_00.23.30.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 17,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24Z",
+        "modified_at": "2020-05-23T22:31:24Z",
+        "img": "pictures/2020-05-24_00.19.20.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 18,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24.001Z",
+        "modified_at": "2020-05-23T22:31:24.001Z",
+        "img": "pictures/2020-05-24_00.18.41.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 19,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24.002Z",
+        "modified_at": "2020-05-23T22:31:24.002Z",
+        "img": "pictures/2020-05-24_00.19.34.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 20,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24.003Z",
+        "modified_at": "2020-05-23T22:31:24.003Z",
+        "img": "pictures/IMG_20191101_142041.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 21,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24.003Z",
+        "modified_at": "2020-05-23T22:31:24.003Z",
+        "img": "pictures/IMG_20191101_142104.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 22,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24.004Z",
+        "modified_at": "2020-05-23T22:31:24.004Z",
+        "img": "pictures/IMG_20191102_181747.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "editions.editionpicture",
+    "pk": 23,
+    "fields": {
+        "created_at": "2020-05-23T22:31:24.005Z",
+        "modified_at": "2020-05-23T22:31:24.005Z",
+        "img": "pictures/IMG_20191101_142119.jpg",
+        "edition": 1
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-04-23T11:29:47.281Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "sponsor"
+        ],
+        "object_id": "1",
+        "object_repr": "Sponsor object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-04-23T11:30:51.965Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizerrole"
+        ],
+        "object_id": "1",
+        "object_repr": "Developer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-04-23T11:30:55.580Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizer"
+        ],
+        "object_id": "1",
+        "object_repr": "Francisco A. Tapias Bravo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-04-23T11:32:46.874Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-05-13T12:03:36.514Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-05-16T08:53:27.091Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-05-16T10:11:12.194Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-05-16T11:44:18.763Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-05-17T10:19:13.227Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-05-17T11:19:39.316Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-05-17T11:23:30.199Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Edition object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-05-17T16:57:33.399Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Edition object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-05-17T19:30:31.029Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Edition object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-05-17T19:32:46.903Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Edition object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-05-17T19:36:23.747Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Edition object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-05-17T20:08:12.447Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "1",
+        "object_repr": "EditionPicture object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-05-17T20:08:23.383Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "2",
+        "object_repr": "EditionPicture object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-05-17T20:08:37.757Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "3",
+        "object_repr": "EditionPicture object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-05-17T20:08:52.488Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "4",
+        "object_repr": "EditionPicture object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2020-05-17T20:09:29.500Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "5",
+        "object_repr": "EditionPicture object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2020-05-17T20:10:50.082Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "6",
+        "object_repr": "EditionPicture object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2020-05-17T20:11:04.172Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "7",
+        "object_repr": "EditionPicture object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2020-05-17T20:11:13.596Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "8",
+        "object_repr": "EditionPicture object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2020-05-17T20:11:30.087Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "9",
+        "object_repr": "EditionPicture object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2020-05-17T20:11:41.068Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "10",
+        "object_repr": "EditionPicture object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2020-05-17T20:11:48.830Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "11",
+        "object_repr": "EditionPicture object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2020-05-17T20:12:02.491Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "12",
+        "object_repr": "EditionPicture object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2020-05-17T20:14:26.580Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party 3 - 2017",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2020-05-23T07:44:08.123Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party 3 - 2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2020-05-23T08:31:54.345Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Capacitor Party 2019",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Subtitle\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2020-05-23T08:34:15.795Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Subtitle\", \"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2020-05-23T08:38:30.601Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Subtitle\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2020-05-23T09:26:56.989Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2020-05-23T09:27:09.355Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2020-05-23T09:33:42.414Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2020-05-23T09:34:06.488Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Capacitor Party 2019",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2020-05-23T09:34:25.859Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2020-05-23T09:34:49.552Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2020-05-23T09:34:58.541Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Capacitor Party 2019",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2020-05-23T09:35:15.484Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2020-05-23T09:56:31.536Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pictures\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2020-05-23T12:15:55.802Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "12",
+        "object_repr": "pictures/IMG_8690.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2020-05-23T12:15:59.925Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "11",
+        "object_repr": "pictures/IMG_8696.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2020-05-23T12:16:02.741Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "10",
+        "object_repr": "pictures/IMG_8703.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2020-05-23T12:16:05.970Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "9",
+        "object_repr": "pictures/IMG_8764.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2020-05-23T12:16:09.163Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "8",
+        "object_repr": "pictures/IMG_8700.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2020-05-23T12:16:13.061Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "7",
+        "object_repr": "pictures/IMG_8677.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2020-05-23T12:16:16.253Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "6",
+        "object_repr": "pictures/IMG_8664.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2020-05-23T12:16:18.884Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "5",
+        "object_repr": "pictures/IMG_2308.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2020-05-23T12:16:21.632Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "4",
+        "object_repr": "pictures/IMG_2280.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2020-05-23T12:16:24.962Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "3",
+        "object_repr": "pictures/IMG_2314.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2020-05-23T12:16:28.245Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "2",
+        "object_repr": "pictures/IMG_2292.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2020-05-23T12:16:31.137Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "1",
+        "object_repr": "pictures/IMG_2291.JPG",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2020-05-23T16:51:12.979Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "1",
+        "object_repr": "pictures/IMG_2280_cnt19Kn.JPG",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2020-05-23T16:51:28.379Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "editionpicture"
+        ],
+        "object_id": "2",
+        "object_repr": "pictures/IMG_2291_SWnGKuI.JPG",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2020-05-23T16:53:58.124Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_2292_XBv7zEG.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_2308_K6mL3yN.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_2314_6MLqoMF.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8664_VKR3TX1.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8677_ItXMcat.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8690_YtVG3Ib.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8696_T7TeFMh.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8700_xTVqdCs.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8703_bxMzg5N.JPG\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_8764_NHDnHAc.JPG\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2020-05-23T22:31:24.006Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Capacitor Party 2019",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.20.38.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.22.58.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.24.30.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.23.30.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.19.20.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.18.41.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/2020-05-24_00.19.34.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_20191101_142041.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_20191101_142104.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_20191102_181747.jpg\"}}, {\"added\": {\"name\": \"edition picture\", \"object\": \"pictures/IMG_20191101_142119.jpg\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2020-05-23T22:35:08.105Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2020-05-23T22:37:00.969Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "role"
+        ],
+        "object_id": "1",
+        "object_repr": "Coder",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2020-05-23T22:37:12.794Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "role"
+        ],
+        "object_id": "2",
+        "object_repr": "Grafista",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2020-05-23T22:37:21.466Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "role"
+        ],
+        "object_id": "3",
+        "object_repr": "M\u00fasico",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2020-05-23T22:58:25.217Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizerrole"
+        ],
+        "object_id": "2",
+        "object_repr": "Organizador",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2020-05-23T22:58:34.525Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizer"
+        ],
+        "object_id": "2",
+        "object_repr": "Pozo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2020-05-23T22:58:50.145Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "3",
+        "object_repr": "Capacitor Party  2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Organizers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2020-05-24T11:51:33.253Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizer"
+        ],
+        "object_id": "3",
+        "object_repr": "TecniMan",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2020-05-24T11:51:40.065Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Start\", \"End\", \"Description\", \"Organizers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2020-05-24T11:52:02.927Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizer"
+        ],
+        "object_id": "1",
+        "object_repr": "FreeMEM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2020-05-24T11:52:26.310Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizer"
+        ],
+        "object_id": "4",
+        "object_repr": "Rastan",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2020-05-24T11:52:40.838Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "organizer"
+        ],
+        "object_id": "1",
+        "object_repr": "FreeMEM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Roles\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2020-05-24T15:40:07.119Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Start\", \"End\", \"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2020-05-24T18:40:00.009Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "2",
+        "object_repr": "Capacitor Party 2020",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Location\", \"Link google map\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2020-05-24T18:41:00.583Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "editions",
+            "edition"
+        ],
+        "object_id": "1",
+        "object_repr": "Capacitor Party 2019",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Location\", \"Link google map\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2020-06-07T11:58:00.896Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "1",
+        "object_repr": "Zener",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2020-06-07T11:59:03.570Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "2",
+        "object_repr": "Skynet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2020-06-07T11:59:33.004Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "3",
+        "object_repr": "Sandman",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2020-06-07T11:59:53.386Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "4",
+        "object_repr": "ToniGalvez",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2020-06-07T12:00:33.786Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "5",
+        "object_repr": "F1REB0Y",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2020-06-07T12:00:46.985Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "6",
+        "object_repr": "Neuroflip",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2020-06-07T12:01:04.302Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scenersgroup"
+        ],
+        "object_id": "1",
+        "object_repr": "ScenersGroup object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2020-06-07T12:07:59.392Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "file"
+        ],
+        "object_id": "1",
+        "object_repr": "File object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2020-06-07T12:12:17.585Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2020-06-07T12:18:58.265Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Preview\", \"Videolink\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2020-08-16T15:49:36.758Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "demo muy chula",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Production type\", \"Authors\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2020-08-16T15:50:54.148Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4pac1t0r Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Authors\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2020-08-16T17:09:15.416Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4pac1t0r Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2020-08-16T17:25:40.711Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2020-08-16T18:06:41.202Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2020-08-21T11:40:49.731Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2020-08-22T10:08:32.044Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Edition\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2020-08-22T10:16:14.227Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "7",
+        "object_repr": "Birra",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2020-08-22T10:16:33.416Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "8",
+        "object_repr": "Tom",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2020-08-22T10:16:48.557Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "9",
+        "object_repr": "Zoltar",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2020-08-22T10:20:45.208Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "file"
+        ],
+        "object_id": "2",
+        "object_repr": "La rutina sibilina",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2020-08-22T10:23:40.516Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "2",
+        "object_repr": "La rutina sibilina",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2020-08-22T10:45:18.657Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2020-08-22T10:48:48.489Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Classification\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2020-08-22T10:48:57.108Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "1",
+        "object_repr": "C4p4citor Invitro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Classification\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2020-08-22T11:07:07.002Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "10",
+        "object_repr": "Ham",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2020-08-22T11:07:12.261Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scenersgroup"
+        ],
+        "object_id": "2",
+        "object_repr": "Software Failure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2020-08-22T11:08:04.461Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scener"
+        ],
+        "object_id": "11",
+        "object_repr": "Ham",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2020-08-22T11:10:26.011Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "file"
+        ],
+        "object_id": "3",
+        "object_repr": "Blue Artifact",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2020-08-22T11:12:12.432Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "3",
+        "object_repr": "Blue Artifact",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2020-08-22T11:21:36.567Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "scenersgroup"
+        ],
+        "object_id": "3",
+        "object_repr": "Goblins",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2020-08-22T11:21:55.982Z",
+        "user": [
+            "freemem"
+        ],
+        "content_type": [
+            "productions",
+            "production"
+        ],
+        "object_id": "2",
+        "object_repr": "La rutina sibilina",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]"
+    }
+}
+]
