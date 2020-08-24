@@ -15,7 +15,7 @@
           <a href="blog.html" class="blog-img mb-3"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
           <div class="desc">
              
-            <div class="date">{{ production.published_date|date:"M d Y" }}</div>
+            <div class="date"><span>{{ production.edition }}</span><span> | </span><span class="small">{{ production.published_date|date:"M d Y" }}</span></div>
             {% if production.description %}
                <p>{{ production.description | safe}}</p>
             {% endif %}
