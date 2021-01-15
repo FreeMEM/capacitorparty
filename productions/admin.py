@@ -1,5 +1,5 @@
 from django.contrib import admin
-from productions.models import Production, ScenersGroup, Scener, Organizer, Role, OrganizerRole, Prize, Compo, File
+from productions.models import Production, ScenersGroup, Scener, Organizer, Role, OrganizerRole, Prize, Compo
 
 # Register your models here.
 
@@ -11,7 +11,6 @@ admin.site.register(Production, ProductionAdmin)
 admin.site.register(ScenersGroup)
 admin.site.register(Scener)
 admin.site.register(Organizer)
-admin.site.register(File)
 admin.site.register(Role)
 admin.site.register(OrganizerRole)
 admin.site.register(Prize)

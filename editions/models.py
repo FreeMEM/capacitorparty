@@ -8,7 +8,7 @@ from django.db import models
 from django.utils import timezone
 from tinymce.models import HTMLField
 from defaults.models import BaseModel
-from productions.models import Scener, File, Description, Production, Organizer
+from productions.models import Scener, Description, Production, Organizer
 
 
 class Sponsor(BaseModel):

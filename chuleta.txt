@@ -1,2 +1,4 @@
-docker build -t capacitor -f Dockerfile .
+#/bin/bash
+sudo docker build -t capacitor -f Dockerfile .
+sudo docker run -it -p 80:8000 capacitor
 docker run -it -p 80:8000 capacitor

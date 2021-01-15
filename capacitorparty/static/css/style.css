@@ -40,6 +40,13 @@ body {
   scroll-behavior: smooth;
 }
 
+pre {
+  background: #000000;
+  color: #00e3a5;
+  border: 1px solid #00e3a5;
+}
+
+
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 500;
@@ -2243,7 +2250,3 @@ body.offcanvas .nav-toggle {
     transform: rotate(360deg);
   }
 }
-
-
-
-

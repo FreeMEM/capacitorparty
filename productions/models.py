@@ -83,13 +83,13 @@ class ScenersGroup(BaseModel):
         return '%s' % (self.name)
 
 
-class File(BaseModel):
-    name = models.CharField(max_length=200)
-    path = models.FileField(upload_to="files")
-    description = HTMLField(blank=True, null=True)
+# class File(BaseModel):
+#     name = models.CharField(max_length=200)
+#     path = models.FileField(upload_to="files")
+#     description = HTMLField(blank=True, null=True)
 
-    def __str__(self):
-        return '%s' % (self.name)
+#     def __str__(self):
+#         return '%s' % (self.name)
 
 class Production(BaseModel):
     title = models.CharField(max_length=200)
@@ -99,7 +99,8 @@ class Production(BaseModel):
     authors = models.ManyToManyField(Scener)
     date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    filepath = models.ForeignKey(File, on_delete=models.CASCADE, blank=True, null=True)
+    # filepath = models.ForeignKey(File, on_delete=models.CASCADE, blank=True, null=True)
+    filepath = models.FileField(upload_to="files", blank=True, null=True)
     classification = models.IntegerField(blank=True, null=True)
     preview = models.ImageField(upload_to='pictures', blank=True, null=True)
     videolink = models.CharField(max_length=200, blank=True, null=True)
