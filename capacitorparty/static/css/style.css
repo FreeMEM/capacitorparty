@@ -862,10 +862,10 @@ body.offcanvas .nav-toggle {
 
 #aside #logo {
   text-align: right;
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   display: block;
   width: 100%;
 }

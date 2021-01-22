@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from capacitorparty.utils.menus import Menus
 from productions.models import ProductionType, Production
 from productions.forms import ProductionForm
@@ -9,6 +9,14 @@ def productions(request):
     menu = Menus()
     productions = Production.objects.exclude(published_date__isnull=True).order_by('production_type')
     return render(request, "productions/productions.html", dict(main_menu=menu.main_menu, productions=productions))
+
+def production(request, production_id):
+
+    print("LLEGO")
+    menu = Menus()
+    production = get_object_or_404(Production, pk=production_id)
+    print(production)
+    return render(request, "productions/production.html", dict(main_menu=menu.main_menu, production=production))
 
 def upload(request):
     menu = Menus()

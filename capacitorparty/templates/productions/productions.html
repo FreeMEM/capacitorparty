@@ -2,81 +2,75 @@
 {% load filter_tags %}
 {% load static %}
 {% block content %}
+   <!-- Banner -->
 
-<div class="row">
-</div>   
-    {% for production in productions %}
-
-    <div class="row">
-
-      <div class="col-md-6 col-sm-6">
-         <div class="blog-entry">
-            
-            <a href="blog.html" class="blog-img mb-3"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
-            <div class="desc">
-               
-               <div class="date"><span>{{ production.edition }}</span><span> | </span><span class="small">{{ production.published_date|date:"M d Y" }}</span></div>
-               {% if production.description %}
-                  {{ production.description | safe}}
-               {% endif %}
-               <div class="content-info">
-                  <div class="row item">
-
-                     <div class="col-md-6 single-info">
-                        <span style="color: #00ebab; text-transform: uppercase;">Nombre de producción:</span>
-                        <p>{{ production.title }}</p>
-                     </div>
-                     {% if production.classification %}
-                     <div class="col-md-6 single-info">
-                        <span style="color: #00ebab; text-transform: uppercase;">Clasificación:</span>
-                        <p>{{ production.classification }}</p>
-                     </div>
-                     {% endif %}
-                     <div class="col-md-6 single-info">
-                        <span style="color: #00ebab; text-transform: uppercase;">Tipo:</span>
-                        <p>{{ production.get_production_type_display }}</p>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-6 single-info">
-                        <span style="color: #00ebab; text-transform: uppercase;">Grupo:</span>
-                        <p>{{ production.group.name }}</p>
-                     </div>
-                     <div class="col-md-6 single-info">
-                        
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-6 single-info">
-                        {% if production.authors.all|length > 1 %}
-                           <span style="color: #00ebab; text-transform: uppercase;">Autores:</span>
-                        {% else %}
-                           <span style="color: #00ebab; text-transform: uppercase;">Autor:</span>
-                        {% endif %}
-                        <br/>
-                        {% for author in production.authors.all %}
-                           {{ author.name }}<br/>
-                        {% endfor %}
-                     </div>
-                     <div class="col-md-6 single-info">
-                        <span style="color: #00ebab; text-transform: uppercase;">Links:</span>
-                        <p><a href="{{ production.filepath.path.url }}">{{ production.filepath.path | last_element:"/" }}</a>
-                           <br/>{{ production.filepath.path.size }} bytes</p>
-                        <p><a href="{{ production.videolink }}" target="_blank">{{ production.videolink }}</a></p>
-                     </div>
-                  </div>
-               </div>
-               
-
-               
+   <!-- Blog -->
+   <section class="js-fullheight" id="production">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
+               <span class="heading-meta">Blog</span>
+               <span class="heading-meta-sub">BLOG</span>
+               <h2>Latest news</h2>
             </div>
          </div>
+         <div class="row">
+            {% for production in productions %}
+            <div class="col-md-6 col-sm-12">
+               
+               <div class="blog-entry">
+                  <div class="row">
+                     <div class="col-md-6 no-padding">
+                        <a href="/productions/{{ production.id }}" class="blog-img mb-3"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="desc">
+                           <span class="text-muted"><small>{{ production.get_production_type_display }} </small> 
+                              {% if production.group %}
+                                 <small> by {{ production.group.name }} </small>
+                              {% endif %}
+                              | <small> {{ production.edition.name }} </small>
+                           </span>
+                           <h3 style="margin:0px;"><a href="{{ production.filepath.url }}">{{ production.title }} <i class="icon fas fa-download"></i></a></h3>
+                                          
+                           {% if production.videolink %}
+                              <small>      
+                                 <a href="{{ production.videolink }}" target="_blank">{{ production.videolink }}</a>
+                              </small>
+                           {% endif %}
+                           
+                           <div class="desc">
+                              
+                                 <small>
+                                 {% if production.authors.all|length > 1 %}
+                                    <span style="color: #00ebab; text-transform: uppercase;">Autores:</span>
+                                 {% else %}
+                                    <span style="color: #00ebab; text-transform: uppercase;">Autor:</span>
+                                 {% endif %}
+                                 </small>
+                                 <br/>
+                                 {% for author in production.authors.all %}
+                                    {% if forloop.first == False %}<span>, {{ author.name }}</span>
+                                    {% else %}
+                                    {{ author.name }}
+                                    {% endif %}
+                                    
+                                 {% endfor %}
+                             
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+
+            </div>
+            {% endfor %}
+         </div>
       </div>
-    
-    </div>
-    <hr/>
-    {% endfor %}   
-    <!-- <div class="row">
-   </div> -->
+   </section>
+
+   <!-- End Blog -->
 
  {% endblock %}
