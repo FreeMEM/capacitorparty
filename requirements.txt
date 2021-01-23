@@ -1,5 +1,6 @@
 asgiref==3.2.3
 Django==3.0.7
+django-embed-video==1.4.0
 django-tinymce==2.8.0
 entrypoints==0.3
 flake8==3.7.9
