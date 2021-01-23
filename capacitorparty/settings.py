@@ -25,7 +25,7 @@ SECRET_KEY = '=$1=@v73g&p+qn((^f_-2g4rk)8l1kebv4xlq_2k!%^jn@w7ip'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'productions',
     'editions',
     'tinymce',
+    'embed_video',
 ]
 
 MIDDLEWARE = [
@@ -55,35 +56,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'capacitorparty.urls'
 
 TEMPLATES = [
-    # {
-    #     'BACKEND': 'django.template.backends.jinja2.Jinja2',
-    #     'DIRS': [os.path.join(BASE_DIR,'capacitorparty/templates')],
-    #     'APP_DIRS': True,
-    #     'OPTIONS': {
-    #         'environment': 'capacitorparty.jinja2.environment',
-    #         'auto_reload': DEBUG,
-    #         'autoescape': True
-    #     },
-    #     "extensions": [
-    #         "jinja2.ext.do",
-    #         "jinja2.ext.loopcontrols",
-    #         "jinja2.ext.with_",
-    #         "jinja2.ext.i18n",
-    #         "jinja2.ext.autoescape",
-    #         "django_jinja.builtins.extensions.CsrfExtension",
-    #         "django_jinja.builtins.extensions.CacheExtension",
-    #         "django_jinja.builtins.extensions.DebugExtension",
-    #         "django_jinja.builtins.extensions.TimezoneExtension",
-    #         "django_jinja.builtins.extensions.UrlsExtension",
-    #         "django_jinja.builtins.extensions.StaticFilesExtension",
-    #         "django_jinja.builtins.extensions.DjangoFiltersExtension",
-    #     ],
-    #     "bytecode_cache": {
-    #         "name": "default",
-    #         "backend": "django_jinja.cache.BytecodeCache",
-    #         "enabled": False,
-    #     },
-    # },
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,'capacitorparty/templates')],
