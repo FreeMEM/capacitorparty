@@ -5,13 +5,13 @@
    <!-- Banner -->
 
    <!-- Blog -->
-   <section class="js-fullheight" id="production">
+   <section class="services bg-dark" id="production">
       <div class="container-fluid">
          <div class="row">
             <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
-               <span class="heading-meta">Blog</span>
-               <span class="heading-meta-sub">BLOG</span>
-               <h2>Latest news</h2>
+               <span class="heading-meta">Compos</span>
+               <span class="heading-meta-sub">COMPOS</span>
+               <h2>Producciones</h2>
             </div>
          </div>
          <div class="row">
@@ -29,7 +29,7 @@
                               {% if production.group %}
                                  <small> by {{ production.group.name }} </small>
                               {% endif %}
-                              | <small> {{ production.edition.name }} </small>
+                              <small>| {{ production.edition.name }} </small>
                            </span>
                            <h3 style="margin:0px;"><a href="{{ production.filepath.url }}">{{ production.title }} <i class="icon fas fa-download"></i></a></h3>
                                           

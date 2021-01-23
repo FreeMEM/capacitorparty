@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from tinymce.models import HTMLField
 from defaults.models import BaseModel
+from embed_video.fields import EmbedVideoField
 
 # Create your models here.
 
@@ -103,7 +104,7 @@ class Production(BaseModel):
     filepath = models.FileField(upload_to="files", blank=True, null=True)
     classification = models.IntegerField(blank=True, null=True)
     preview = models.ImageField(upload_to='pictures', blank=True, null=True)
-    videolink = models.CharField(max_length=200, blank=True, null=True)
+    videolink = EmbedVideoField(max_length=200, blank=True, null=True)
     edition = models.ForeignKey('editions.Edition', blank=True, null=True, on_delete=models.SET_NULL)
 
     def publish(self):

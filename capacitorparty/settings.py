@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'editions',
     'tinymce',
     'embed_video',
+    'mathfilters',
 ]
 
 MIDDLEWARE = [
