@@ -31,14 +31,8 @@
                               {% endif %}
                               <small>| {{ production.edition.name }} </small>
                            </span>
-                           <h3 style="margin:0px;"><a href="{{ production.filepath.url }}">{{ production.title }} <i class="icon fas fa-download"></i></a></h3>
+                           <h3 style="margin:0px;"><a href="/productions/{{ production.id }}">{{ production.title }}</a></h3>
                                           
-                           {% if production.videolink %}
-                              <small>      
-                                 <a href="{{ production.videolink }}" target="_blank">{{ production.videolink }}</a>
-                              </small>
-                           {% endif %}
-                           
                            <div class="desc">
                               
                                  <small>

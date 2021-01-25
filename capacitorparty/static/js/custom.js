@@ -195,20 +195,24 @@
 
 	var typed = function () {
 		//------- Typed --------// 
-		var typed = new Typed('#typed-slide-1', {
-			stringsElement: '#typed-strings-slide-1',
-			backSpeed: 15,
-			typeSpeed: 80,
-			loop: true
-		});
+		if (document.getElementById('typed-slide-1')) {
+			var typed = new Typed('#typed-slide-1', {
+				stringsElement: '#typed-strings-slide-1',
+				backSpeed: 15,
+				typeSpeed: 80,
+				loop: true
+			});
+		};
 
 		//------- Typed --------// 
-		var typed = new Typed('#typed-slide-2', {
-			stringsElement: '#typed-strings-slide-2',
-			backSpeed: 15,
-			typeSpeed: 80,
-			loop: true
-		});
+		if (document.getElementById('typed-slide-2')) {
+			var typed = new Typed('#typed-slide-2', {
+				stringsElement: '#typed-strings-slide-2',
+				backSpeed: 15,
+				typeSpeed: 80,
+				loop: true
+			});
+		};
 	}
 
 
@@ -282,7 +286,7 @@
 		fullHeight();
 		halfHeight();
 		contentWayPoint();
-		burgerMenu();
+		// burgerMenu();
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
@@ -323,7 +327,6 @@ $(window).load(function() {
 
   setTimeout(function() {
     var currentPositon = $(".loading").css("transform");
-    console.log(currentPositon)
     $(".loading").addClass("class").css("transform", currentPositon).css("transform", "none")
     $(".loading").animate({
 
