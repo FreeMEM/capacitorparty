@@ -294,6 +294,14 @@ body.offcanvas .nav-toggle {
   display: block;
 }
 
+.production, .rel_productions {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .about,
   .services,

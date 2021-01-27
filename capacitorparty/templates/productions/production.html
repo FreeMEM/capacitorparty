@@ -5,8 +5,8 @@
 {% load mathfilters %}
 {% block content %}
 
-<section class="services bg-dark" id="product">
-   <div id="particles-js"></div>
+<section class="production bg-dark" id="product">
+   
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
@@ -86,113 +86,90 @@
    </div>
    
 </section>
-
-
-<section class="blog bg-dark" id="blog">
-   
+<section  class="rel_productions bg-dark" id="blog">
    <div class="container-fluid">
       <div class="row">
-         <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
-            <span class="heading-meta">Blog</span>
-            <span class="heading-meta-sub">BLOG</span>
-            <h2>Latest news</h2>
+         <div class="col-md-12  text-center">
+
+            <h3>Otras producciones de </h3>
          </div>
       </div>
 
       <div class="row">
          <div class="col-lg-12 col-md-12">
-            <div class="blog_slider owl-carousel  owl-responsive-769 owl-theme owl-loaded">
-            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1320px, 0px, 0px); transition: all 2.5s ease 0s; width: 3960px;"><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="col-md-12 col-sm-12">
-                  
+            <div class="blog_slider owl-carousel ">
+
+               <div class="col-md-12 col-sm-12">
                   <div class="blog-entry">
-                     <div class="date">Oct 30<br> 2019</div>
+
                      <div class="col-md-6 no-padding">
-                        <a href="blog.html" class="blog-img"><img src="/media/pictures/2020-05-24_00.23.30.jpg" class="img-responsive" alt=""></a>
+                        <a href="/productions/{{ production.id }}" class="blog-img"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
                      </div>
                      <div class="col-md-6">
                      <div class="desc">
-                        <span class="text-muted"><small>Personal </small> | <small> Web Design </small></span>
-                        <h3><a href="blog.html"> Aliquam in pellentesque libero.</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis non porta. Mauris nibh diam, pharetra eu nunc id, lobortis faucibus purus. </p>
+                        <span class="text-muted"><small>{{ production.get_production_type_display }} </small> 
+                           {% if production.group %}
+                              <small> by {{ production.group.name }} </small>
+                           {% endif %}
+                           <small>| {{ production.edition.name }} </small>
+                        </span>
+                        <h3><a href="/productions/{{ production.id }}">{{ production.title }}</a></h3>
+                        <p></p>
                      </div>
                      </div>
                   </div>
-               </div></div><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="col-md-12 col-sm-12">
-                  <div class="blog-entry">
-                     <div class="date">Oct 30<br> 2019</div>
-                     <div class="col-md-6 no-padding">
-                        <a href="blog.html" class="blog-img"><img src="/media/pictures/2020-05-24_00.24.30.jpg" class="img-responsive" alt=""></a>
-                     </div>
-                     <div class="col-md-6">
-                     <div class="desc">
-                        <span class="text-muted"><small>Personal </small> | <small> Web Design </small></span>
-                        <h3><a href="blog.html"> Aliquam in pellentesque libero.</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis non porta. Mauris nibh diam, pharetra eu nunc id, lobortis faucibus purus. </p>
-                     </div>
-                     </div>
-                  </div>
-               </div></div><div class="owl-item active" style="width: 660px; margin-right: 0px;"><div class="col-md-12 col-sm-12">
-                  
-                  <div class="blog-entry">
-                     <div class="date">Oct 30<br> 2019</div>
-                     <div class="col-md-6 no-padding">
-                        <a href="blog.html" class="blog-img"><img src="/media/pictures/2020-05-24_00.20.38.jpg" class="img-responsive" alt=""></a>
-                     </div>
-                     <div class="col-md-6">
-                     <div class="desc">
-                        <span class="text-muted"><small>Personal </small> | <small> Web Design </small></span>
-                        <h3><a href="blog.html"> Aliquam in pellentesque libero.</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis non porta. Mauris nibh diam, pharetra eu nunc id, lobortis faucibus purus. </p>
-                     </div>
-                     </div>
-                  </div>
-               </div></div><div class="owl-item active" style="width: 660px; margin-right: 0px;"><div class="col-md-12 col-sm-12">
-                  <div class="blog-entry">
-                     <div class="date">Oct 30<br> 2019</div>
-                     <div class="col-md-6 no-padding">
-                        <a href="blog.html" class="blog-img"><img src="/media/pictures/2020-05-24_00.18.41.jpg" class="img-responsive" alt=""></a>
-                     </div>
-                     <div class="col-md-6">
-                     <div class="desc">
-                        <span class="text-muted"><small>Personal </small> | <small> Web Design </small></span>
-                        <h3><a href="blog.html"> Aliquam in pellentesque libero.</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis non porta. Mauris nibh diam, pharetra eu nunc id, lobortis faucibus purus. </p>
-                     </div>
-                     </div>
-                  </div>
-               </div></div><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="col-md-12 col-sm-12">
-                  
-                  <div class="blog-entry">
-                     <div class="date">Oct 30<br> 2019</div>
-                     <div class="col-md-6 no-padding">
-                        <a href="blog.html" class="blog-img"><img src="/media/pictures/2020-05-24_00.19.20.jpg" class="img-responsive" alt=""></a>
-                     </div>
-                     <div class="col-md-6">
-                     <div class="desc">
-                        <span class="text-muted"><small>Personal </small> | <small> Web Design </small></span>
-                        <h3><a href="blog.html"> Aliquam in pellentesque libero.</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis non porta. Mauris nibh diam, pharetra eu nunc id, lobortis faucibus purus. </p>
-                     </div>
-                     </div>
-                  </div>
-               </div></div><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="col-md-12 col-sm-12">
-                  <div class="blog-entry">
-                     <div class="date">Oct 30<br> 2019</div>
-                     <div class="col-md-6 no-padding">
-                        <a href="blog.html" class="blog-img"><img src="/media/pictures/2020-05-24_00.19.34.jpg" class="img-responsive" alt=""></a>
-                     </div>
-                     <div class="col-md-6">
-                     <div class="desc">
-                        <span class="text-muted"><small>Personal </small> | <small> Web Design </small></span>
-                        <h3><a href="blog.html"> Aliquam in pellentesque libero.</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis non porta. Mauris nibh diam, pharetra eu nunc id, lobortis faucibus purus. </p>
-                     </div>
-                     </div>
-                  </div>
-               </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div style="display: none;" class="owl-dots"></div></div></div>
+               </div>
+
+
+            </div>
          </div>
       </div>
 
    </div>
 </section>
  {% endblock %}
+
+ <div class="col-md-12 col-sm-12">
+                  
+   <div class="blog-entry">
+      <div class="row">
+         <div class="col-md-12 no-padding">
+            <a href="/productions/{{ production.id }}" class="blog-img mb-3"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
+         </div>
+         <div class="col-md-12">
+            <div class="desc">
+               <span class="text-muted"><small>{{ production.get_production_type_display }} </small> 
+                  {% if production.group %}
+                     <small> by {{ production.group.name }} </small>
+                  {% endif %}
+                  <small>| {{ production.edition.name }} </small>
+               </span>
+               <h3 style="margin:0px;"><a href="/productions/{{ production.id }}">{{ production.title }}</a></h3>
+                              
+               <div class="desc">
+                  
+                     <small>
+                     {% if production.authors.all|length > 1 %}
+                        <span style="color: #00ebab; text-transform: uppercase;">Autores:</span>
+                     {% else %}
+                        <span style="color: #00ebab; text-transform: uppercase;">Autor:</span>
+                     {% endif %}
+                     </small>
+                     <br/>
+                     {% for author in production.authors.all %}
+                        {% if forloop.first == False %}<span>, {{ author.name }}</span>
+                        {% else %}
+                        {{ author.name }}
+                        {% endif %}
+                        
+                     {% endfor %}
+                 
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      
+   </div>
+
+</div>

@@ -157,7 +157,6 @@
 	};
 
 	var stickyFunction = function () {
-
 		var h = $('.image-content').outerHeight();
 
 		if ($(window).width() <= 992) {
@@ -288,7 +287,7 @@
 		contentWayPoint();
 		burgerMenu();
 		mobileMenuOutsideClick();
-		sliderMain();
+		// sliderMain();
 		stickyFunction();
 		typed();
 		menuactive();
