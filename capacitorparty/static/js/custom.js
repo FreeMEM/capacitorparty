@@ -286,7 +286,7 @@
 		fullHeight();
 		halfHeight();
 		contentWayPoint();
-		// burgerMenu();
+		burgerMenu();
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
