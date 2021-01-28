@@ -17,8 +17,7 @@ def production(request, production_id):
     menu = Menus()
     production = get_object_or_404(Production, pk=production_id)
     inf = inflect.engine()
-    productions = Production.objects.filter(group=production.group)
-    return render(request, "productions/production.html", dict(main_menu=menu.main_menu, production=production, clasificacion=inf.ordinal(production.classification), productions=productions))
+    return render(request, "productions/production.html", dict(main_menu=menu.main_menu, production=production, clasificacion=inf.ordinal(production.classification)))
 
 def upload(request):
     menu = Menus()
