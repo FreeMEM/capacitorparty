@@ -36,7 +36,7 @@
                   </h2>
                   <div class="content-info">
                      <div class="row item">
-                        {% if clasificacion %}
+                        {% if classificacion %}
                         <div class="col-md-6 single-info">
                            <span style="color: #00ebab; text-transform: uppercase;">Clasificación:</span>
                            <p>{{ clasificacion }} position {{ production.get_production_type_display }} compo</p>
@@ -55,13 +55,16 @@
                         <div class="col-md-6 single-info">
                            {% if production.authors.all|length > 1 %}
                               <span style="color: #00ebab; text-transform: uppercase;">Autores:</span>
+                              
                            {% else %}
                               <span style="color: #00ebab; text-transform: uppercase;">Autor:</span>
                            {% endif %}
                            <br/>
+                           <ul>
                            {% for author in production.authors.all %}
-                              {{ author.name }}<br/>
+                              <li><a href="/scene/author/{{ author.id }}">{{ author.name }}</a></li><br/></li>
                            {% endfor %}
+                           </ul>
                         </div>
                         <div class="col-md-6 single-info">
                            <p><a href="{{ production.filepath.url }}"><i class="icon fas fa-download"></i> {{ production.filepath.path | last_element:"/" }}</a>
