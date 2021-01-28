@@ -23,6 +23,12 @@ def production(request, production_id):
 
     return render(request, "productions/production.html", dict(main_menu=menu.main_menu, production=production, clasificacion=clasificacion))
 
+def author(request, author_id):
+    print(request)
+    print(author_id)
+    return render(request, "productions/author.html")
+
+
 def upload(request):
     menu = Menus()
     if request.method == 'POST':
