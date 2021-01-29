@@ -34,7 +34,6 @@
                            <h3 style="margin:0px;"><a href="/productions/{{ production.id }}">{{ production.title }}</a></h3>
                                           
                            <div class="desc">
-                              
                                  <small>
                                  {% if production.authors.all|length > 1 %}
                                     <span style="color: #00ebab; text-transform: uppercase;">Autores:</span>
@@ -42,15 +41,17 @@
                                     <span style="color: #00ebab; text-transform: uppercase;">Autor:</span>
                                  {% endif %}
                                  </small>
-                                 <br/>
+                                 <p>
+                                 {% spaceless %}
                                  {% for author in production.authors.all %}
-                                    {% if forloop.first == False %}<span>, {{ author.name }}</span>
-                                    {% else %}
-                                    {{ author.name }}
-                                    {% endif %}
-                                    
+                                 {% if forloop.first == False %}
+                                 <span>, </span><span> {{ author.name}}</span>
+                                 {% else %}
+                                 <span>{{ author.name}}</span>
+                                 {% endif %}
                                  {% endfor %}
-                             
+                                 {% endspaceless %}
+                                 </p>
                            </div>
                            
                         </div>
