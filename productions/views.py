@@ -1,17 +1,16 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from capacitorparty.utils.menus import Menus
 from productions.models import ProductionType, Production, Scener
 from productions.forms import ProductionForm
 import inflect
 
 
 # Create your views here.
-menu = Menus()
+
 
 def productions(request):
     
     productions = Production.objects.exclude(published_date__isnull=True).order_by('production_type')
-    return render(request, "productions/productions.html", dict(main_menu=menu.main_menu, productions=productions))
+    return render(request, "productions/productions.html", dict(productions=productions))
 
 def production(request, production_id):
     
@@ -21,12 +20,12 @@ def production(request, production_id):
     if production.classification:
         clasificacion = inf.ordinal(production.classification)
 
-    return render(request, "productions/production.html", dict(main_menu=menu.main_menu, production=production, clasificacion=clasificacion))
+    return render(request, "productions/production.html", dict(production=production, clasificacion=clasificacion))
 
 def author(request, author_id):
 
     author = get_object_or_404(Scener, pk=author_id)
-    return render(request, "productions/author.html", dict(main_menu=menu.main_menu, scener=author ))
+    return render(request, "productions/author.html", dict(scener=author ))
 
 
 def upload(request):
@@ -51,5 +50,5 @@ def upload(request):
         form = ProductionForm()
         form.use_required_attribute=False
     
-    return render(request, "productions/upload.html", dict(main_menu=menu.main_menu, form=form))
+    return render(request, "productions/upload.html", dict(form=form))
 
