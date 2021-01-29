@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from capacitorparty.utils.menus import Menus
-from productions.models import ProductionType, Production
+from productions.models import ProductionType, Production, Scener
 from productions.forms import ProductionForm
 import inflect
 
@@ -24,9 +24,9 @@ def production(request, production_id):
     return render(request, "productions/production.html", dict(main_menu=menu.main_menu, production=production, clasificacion=clasificacion))
 
 def author(request, author_id):
-    print(request)
-    print(author_id)
-    return render(request, "productions/author.html", dict(main_menu=menu.main_menu,))
+
+    author = get_object_or_404(Scener, pk=author_id)
+    return render(request, "productions/author.html", dict(main_menu=menu.main_menu, scener=author ))
 
 
 def upload(request):

@@ -1,11 +1,80 @@
 {% extends 'base/layout.html' %}
 {% load filter_tags %}
 {% load static %}
-{% load embed_video_tags %}
-{% load mathfilters %}
+
 {% block content %}
 
 <section class="production bg-dark" id="product">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
+              <span class="heading-meta">Scener</span>
+              <span class="heading-meta-sub">Scener</span>
+              <h2>{{ sceener.name }}</h2>
+           </div>
+        </div>
+    </div>
 </section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 welcome-section">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="content-info">
+                            <div class="row">
+                                {% if scener.roles %}
+                                <div class="col-md-6 single-info">
+                                    <span>Roles:</span>
+                                    {% for role in scener.roles.all %}
+                                        {% if forloop.first == False %}
+                                            <span>,</span><span>{{ role.name }}</span>
+                                        {% else %}
+                                            {{ role.name }}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                {% if scener.external_link %}
+                                <div class="col-md-6 single-info">
+                                    <span>Links:</span>
+                                    <p><a href="{{ scener.external_link }}">{{ scener.external_link }}</a></p>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 single-info">
+                                    <span>Age:</span>
+                                    <p>23</p>
+                                </div>
+                                <div class="col-md-6 single-info">
+                                    <span>Phone:</span>
+                                    <p><a href="tel:+123456789000" class="text-custom">+123 456-789-000</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 single-info">
+                                    <span>Job:</span>
+                                    <p>Freelancer</p>
+                                </div>
+                                <div class="col-md-6 single-info">
+                                    <span>From:</span>
+                                    <p>Liverpool, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- End About -->
 
 {% endblock %}
