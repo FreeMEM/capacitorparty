@@ -6,15 +6,15 @@ import inflect
 
 
 # Create your views here.
-
+menu = Menus()
 
 def productions(request):
-    menu = Menus()
+    
     productions = Production.objects.exclude(published_date__isnull=True).order_by('production_type')
     return render(request, "productions/productions.html", dict(main_menu=menu.main_menu, productions=productions))
 
 def production(request, production_id):
-    menu = Menus()
+    
     production = get_object_or_404(Production, pk=production_id)
     inf = inflect.engine()
     clasificacion=None
@@ -26,11 +26,11 @@ def production(request, production_id):
 def author(request, author_id):
     print(request)
     print(author_id)
-    return render(request, "productions/author.html")
+    return render(request, "productions/author.html", dict(main_menu=menu.main_menu,))
 
 
 def upload(request):
-    menu = Menus()
+    
     if request.method == 'POST':
         form = ProductionForm(request.POST, request.FILES)
         if form.is_valid():
