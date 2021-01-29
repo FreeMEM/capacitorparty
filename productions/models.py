@@ -50,9 +50,10 @@ class OrganizerRole(BaseModel):
 
 
 class Scener(BaseModel):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
     roles = models.ManyToManyField(Role)
     description = HTMLField(blank=True, null=True)
+    external_link = models.URLField(max_length=200, blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -73,9 +74,10 @@ class Organizer(BaseModel):
 
 
 class ScenersGroup(BaseModel):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
     member = models.ManyToManyField(Scener)
     description = HTMLField(blank=True, null=True)
+    external_link = models.URLField(max_length=200, blank=True, null=True)
 
     class Meta:
         ordering = ["name"]
