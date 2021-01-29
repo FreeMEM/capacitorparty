@@ -45,9 +45,9 @@
                                  {% spaceless %}
                                  {% for author in production.authors.all %}
                                  {% if forloop.first == False %}
-                                 <span>, </span><span> {{ author.name}}</span>
+                                 <span>, </span><span><a href="/scene/author/{{ author.id }}">{{ author.name }}</a></span>
                                  {% else %}
-                                 <span>{{ author.name}}</span>
+                                 <span><a href="/scene/author/{{ author.id }}">{{ author.name }}</a></span>
                                  {% endif %}
                                  {% endfor %}
                                  {% endspaceless %}

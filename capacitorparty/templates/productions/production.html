@@ -38,33 +38,33 @@
                      <div class="row item">
                         {% if classificacion %}
                         <div class="col-md-6 single-info">
-                           <span style="color: #00ebab; text-transform: uppercase;">Clasificación:</span>
-                           <p>{{ clasificacion }} position {{ production.get_production_type_display }} compo</p>
+                           <span >Clasificación:</span>
+                           <p style="color: #00ebab; text-transform: uppercase;">{{ clasificacion }} position {{ production.get_production_type_display }} compo</p>
                         </div>
                         {% endif %}
                         <div class="col-md-6 single-info">
-                           <span style="color: #00ebab; text-transform: uppercase;">Tipo:</span>
-                           <p>{{ production.get_production_type_display }}</p>
+                           <span >Tipo:</span>
+                           <p style="color: #00ebab; text-transform: uppercase;">{{ production.get_production_type_display }}</p>
                         </div>
 
                         <div class="col-md-6 single-info">
-                           <span style="color: #00ebab; text-transform: uppercase;">Grupo:</span>
-                           <p>{{ production.group.name }}</p>
+                           <span >Grupo:</span>
+                           <p style="color: #00ebab; text-transform: uppercase;">{{ production.group.name }}</p>
                         </div>
 
                         <div class="col-md-6 single-info">
                            {% if production.authors.all|length > 1 %}
-                              <span style="color: #00ebab; text-transform: uppercase;">Autores:</span>
+                              <span >Autores:</span>
                               
                            {% else %}
-                              <span style="color: #00ebab; text-transform: uppercase;">Autor:</span>
+                              <span>Autor:</span>
                            {% endif %}
                            <br/>
-                           <ul>
+                           
                            {% for author in production.authors.all %}
-                              <li><a href="/scene/author/{{ author.id }}">{{ author.name }}</a></li><br/></li>
+                              <a href="/scene/author/{{ author.id }}">{{ author.name }}</a><br/>
                            {% endfor %}
-                           </ul>
+                           
                         </div>
                         <div class="col-md-6 single-info">
                            <p><a href="{{ production.filepath.url }}"><i class="icon fas fa-download"></i> {{ production.filepath.path | last_element:"/" }}</a>
