@@ -26,15 +26,12 @@ register.filter('last_element', last_element)
 
 @register.simple_tag(takes_context=True)
 def active(context, pattern_or_urlname):
-
     try:
-        pattern = '^' + reverse(pattern_or_urlname)
+        pattern = reverse(pattern_or_urlname)
     except NoReverseMatch:
         pattern = pattern_or_urlname
     path = context['request'].path
-    # pattern = pattern_or_urlname
-    # path = context['request'].path
-    print("pattern: %s path %s - %s" % (pattern, path, re.search(pattern, path)))
-    if re.search(pattern, path):
+
+    if pattern.split("/")[-1] == path.split("/")[-1]:
         return 'active'
     return ''
