@@ -294,7 +294,7 @@ body.offcanvas .nav-toggle {
   display: block;
 }
 
-.production, .rel_productions {
+.production, .rel_productions, .author {
   padding-top: 4em;
   padding-bottom: 2em;
   clear: both;
@@ -308,7 +308,8 @@ body.offcanvas .nav-toggle {
   .works,
   .client,
   .blog,
-  .contact {
+  .contact,
+  .author {
     padding-top: 5em;
     padding-bottom: 8em;
   }
