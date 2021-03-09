@@ -25,6 +25,8 @@ def production(request, production_id):
 def author(request, author_id):
 
     author = get_object_or_404(Scener, pk=author_id)
+    productions = Production.objects.filter(authors=author)
+    print(productions)
     groups = ScenersGroup.objects.filter(member=author)
 
     return render(request, "productions/author.html", dict(scener=author, groups=groups))
@@ -40,7 +42,7 @@ def upload(request):
                                 title=request.POST['title'],
                                 description=request.POST['description'],
                                 production_type=request.POST['production_type'] )
-            print(Production.production_type)
+            
             instance.save()
             return redirect('productions')
         else:
