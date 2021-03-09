@@ -16,3 +16,11 @@ def editions(request):
     for picture in pictures:
         editions[picture.edition] = True
     return render(request, "editions/editions.html", dict(pictures=pictures, editions=editions.keys()))
+
+
+def author(request, author_id):
+
+    author = get_object_or_404(Scener, pk=author_id)
+    groups = ScenersGroup.objects.filter(member=author)
+
+    return render(request, "productions/author.html", dict(scener=author, groups=groups))

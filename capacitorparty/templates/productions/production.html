@@ -21,6 +21,8 @@
                {% video production.videolink as videolink %}
                   {% video videolink '100% x 450' %}
                {% endvideo %}
+            {% else %}
+               <img src="{{production.preview.url}}" class="img-responsive" alt="">
             {% endif %}
          </div>
          <div class="col-md-6">
@@ -62,7 +64,7 @@
                            <br/>
                            
                            {% for author in production.authors.all %}
-                              <a href="/scene/author/{{ author.id }}">{{ author.name }}</a><br/>
+                              <a href="/productions/author/{{ author.id }}">{{ author.name }}</a><br/>
                            {% endfor %}
                            
                         </div>

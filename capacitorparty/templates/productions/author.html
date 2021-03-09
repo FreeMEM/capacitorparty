@@ -10,7 +10,7 @@
            <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
               <span class="heading-meta">Scener</span>
               <span class="heading-meta-sub">Scener</span>
-              <h2>{{ sceener.name }}</h2>
+              <h2>{{ scener.name }}</h2>
            </div>
         </div>
     </div>
@@ -31,15 +31,32 @@
                                 {% if scener.roles %}
                                 <div class="col-md-6 single-info">
                                     <span>Roles:</span>
+                                    {% spaceless %}
                                     {% for role in scener.roles.all %}
                                         {% if forloop.first == False %}
-                                            <span>,</span><span>{{ role.name }}</span>
+                                            <span>, </span><span>{{ role.name }}</span>
                                         {% else %}
                                             {{ role.name }}
                                         {% endif %}
                                     {% endfor %}
+                                    {% endspaceless %}
                                 </div>
                                 {% endif %}
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 single-info">
+                                    <span>Miembro de:</span>
+                                    <ul>
+                                    {% spaceless %}
+                                    {% for group in groups.all %}                                    
+                                        <li>{{ group.name }}</li>
+                                    {% endfor %}
+                                    {% endspaceless %}
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
                                 {% if scener.external_link %}
                                 <div class="col-md-6 single-info">
                                     <span>Links:</span>
@@ -47,26 +64,8 @@
                                 </div>
                                 {% endif %}
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 single-info">
-                                    <span>Age:</span>
-                                    <p>23</p>
-                                </div>
-                                <div class="col-md-6 single-info">
-                                    <span>Phone:</span>
-                                    <p><a href="tel:+123456789000" class="text-custom">+123 456-789-000</a></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 single-info">
-                                    <span>Job:</span>
-                                    <p>Freelancer</p>
-                                </div>
-                                <div class="col-md-6 single-info">
-                                    <span>From:</span>
-                                    <p>Liverpool, UK</p>
-                                </div>
-                            </div>
+
+                            
                         </div>
                     </div>
                 </div>

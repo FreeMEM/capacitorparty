@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from productions.models import ProductionType, Production, Scener
+from productions.models import ProductionType, Production, Scener, ScenersGroup
 from productions.forms import ProductionForm
 import inflect
 
@@ -25,7 +25,9 @@ def production(request, production_id):
 def author(request, author_id):
 
     author = get_object_or_404(Scener, pk=author_id)
-    return render(request, "productions/author.html", dict(scener=author ))
+    groups = ScenersGroup.objects.filter(member=author)
+
+    return render(request, "productions/author.html", dict(scener=author, groups=groups))
 
 
 def upload(request):
