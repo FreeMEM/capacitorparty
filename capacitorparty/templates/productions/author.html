@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<section class="production bg-dark" id="product">
+<section class="bg-dark author">
     <div class="container">
         <div class="row">
            <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
@@ -17,59 +17,53 @@
 </section>
 
 <!-- About -->
-<section class="about" id="about">
+<section class="bg-dark" id="author">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 welcome-section">
-
-
+            <div class="col-md-3 mb-12">
                 <div class="row">
-                    <div class="col-md-12">
-
-                        <div class="content-info">
-                            <div class="row">
-                                {% if scener.roles %}
-                                <div class="col-md-6 single-info">
-                                    <span>Roles:</span>
-                                    {% spaceless %}
-                                    {% for role in scener.roles.all %}
-                                        {% if forloop.first == False %}
-                                            <span>, </span><span>{{ role.name }}</span>
-                                        {% else %}
-                                            {{ role.name }}
-                                        {% endif %}
-                                    {% endfor %}
-                                    {% endspaceless %}
-                                </div>
-                                {% endif %}
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 single-info">
-                                    <span>Miembro de:</span>
-                                    <ul>
-                                    {% spaceless %}
-                                    {% for group in groups.all %}                                    
-                                        <li>{{ group.name }}</li>
-                                    {% endfor %}
-                                    {% endspaceless %}
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                {% if scener.external_link %}
-                                <div class="col-md-6 single-info">
-                                    <span>Links:</span>
-                                    <p><a href="{{ scener.external_link }}">{{ scener.external_link }}</a></p>
-                                </div>
-                                {% endif %}
-                            </div>
-
-                            
-                        </div>
+                    {% if scener.roles %}
+                    <div >
+                        <span>Roles:</span>
+                        {% spaceless %}
+                        {% for role in scener.roles.all %}
+                            {% if forloop.first == False %}
+                                <span>, </span><span>{{ role.name }}</span>
+                            {% else %}
+                                {{ role.name }}
+                            {% endif %}
+                        {% endfor %}
+                        {% endspaceless %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div>
+                        <span>Miembro de:</span>
+                        <ul>
+                        {% spaceless %}
+                        {% for group in groups.all %}                                    
+                            <li>{{ group.name }}</li>
+                        {% endfor %}
+                        {% endspaceless %}
+                        </ul>
                     </div>
                 </div>
-
+                <div class="row">
+                    {% if scener.external_link %}
+                    <div>
+                        <span>Links:</span>
+                        <p><a href="{{ scener.external_link }}">{{ scener.external_link }}</a></p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-8 mb-12 ">
+                <div class="row">
+                    {% for production in productions %}
+                        <div class="col-mod-8 mb-12"></div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
