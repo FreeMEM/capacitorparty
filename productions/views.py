@@ -26,10 +26,10 @@ def author(request, author_id):
 
     author = get_object_or_404(Scener, pk=author_id)
     productions = Production.objects.filter(authors=author)
-    print(productions)
+
     groups = ScenersGroup.objects.filter(member=author)
 
-    return render(request, "productions/author.html", dict(scener=author, groups=groups))
+    return render(request, "productions/author.html", dict(scener=author, groups=groups, productions=productions))
 
 
 def upload(request):
@@ -48,8 +48,8 @@ def upload(request):
         else:
             print("NO ES VALIDO")
             print(form)
-        # return redirect('productions:productions')
-        
+            return redirect('productions:productions')
+
     else:
         form = ProductionForm()
         form.use_required_attribute=False
