@@ -9,7 +9,7 @@ inflect==5.0.2
 #Jinja2==2.11.2
 MarkupSafe==1.1.1
 #mccabe==0.6.1
-Pillow==7.1.2
+Pillow==8.1.1
 #pycodestyle==2.5.0
 #pyflakes==2.1.1
 #pygame==1.9.6
