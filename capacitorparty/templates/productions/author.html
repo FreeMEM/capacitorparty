@@ -16,7 +16,7 @@
     </div>
 </section>
 
-<!-- About -->
+<!-- Author -->
 <section class="bg-dark" id="author">
     <div class="container-fluid">
         <div class="row">
@@ -59,15 +59,33 @@
                 </div>
             </div>
             <div class="col-md-8 mb-12 ">
-                <div class="row">
-                    {% for production in productions %}
-                        <div class="col-mod-8 mb-12"></div>
-                    {% endfor %}
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                        {% for production in productions %}
+                            <tr>
+                                <td>
+                                    <a href="/productions/{{ production.id }}" class="blog-img mb-3"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
+                                    <!-- <a href="/productions/{{ production.id }}" class="blog-img"></a><img src="{{production.preview.url}}" class="img-responsive" alt=""></a> -->
+                                </td>
+                                <td width="80%"><a href="/productions/{{ production.id }}">{{ production.title }}</a>
+                                    <p class="text-muted">
+                                        <small>{{ production.get_production_type_display }}. {{ production.edition.name }}</small> 
+                                    </p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+    
+                        </tbody>
+                        
+                    </table>
+
                 </div>
+                
             </div>
         </div>
     </div>
 </section>
-    <!-- End About -->
+    <!-- End Author -->
 
 {% endblock %}
