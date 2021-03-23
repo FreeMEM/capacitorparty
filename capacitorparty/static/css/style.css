@@ -1863,11 +1863,12 @@ body.offcanvas .nav-toggle {
 
 @media screen and (max-width: 768px) {
   #blog .blog-entry {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 }
 
 #blog .blog-entry .blog-img {
+  max-height: 280px;
   width: 100%;
   float: left;
   overflow: hidden;
