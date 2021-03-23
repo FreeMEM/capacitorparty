@@ -33,11 +33,9 @@ def author(request, author_id):
 
 
 def upload(request):
-    
     if request.method == 'POST':
         form = ProductionForm(request.POST, request.FILES)
         if form.is_valid():
-            
             instance = Production(filepath=request.FILES['filepath'],
                                 title=request.POST['title'],
                                 description=request.POST['description'],
@@ -45,14 +43,8 @@ def upload(request):
             
             instance.save()
             return redirect('productions')
-        else:
-            print("NO ES VALIDO")
-            print(form)
-            return redirect('productions:productions')
-
     else:
         form = ProductionForm()
-        form.use_required_attribute=False
-    
+        # form.use_required_attribute=False
     return render(request, "productions/upload.html", dict(form=form))
 
