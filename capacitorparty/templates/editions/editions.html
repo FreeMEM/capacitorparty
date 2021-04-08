@@ -28,13 +28,17 @@
                             <div class="work-gallery">
                               {% for picture in pictures.all %}
                                <div class="work-item {{ picture.edition.name.split|join:'_' }}">
-                                  <img class="img-fluid" src="{{ picture.img.url }}" alt="">
-                                  <div class="hover-links">
+                                 <img class="img-fluid" src="{{ picture.img.url }}" alt="">
+                                 <a href="/editions/{{ picture.edition.id }}">
+                                 <div class="hover-links">
                                      <div class="con">
-                                        <h3><a href="work-single.html">{{ picture.edition.name }}</a></h3>
-                                        <span>{{ picture.edition.subtitle }}</span>
+                                       
+                                          <h3>{{ picture.edition.name }}</h3>
+                                          <span>{{ picture.edition.subtitle }}</span>
+                                       
                                      </div>
                                   </div>
+                                 </a>   
                                </div>
                               {% endfor %}
                             </div>
