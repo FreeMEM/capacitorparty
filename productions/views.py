@@ -47,19 +47,33 @@ def author(request, author_id):
 
 
 def upload(request):
+    """ Function to upload the production files """
+    # import pdb
+
     if request.method == "POST":
+        # pdb.set_trace()
         form = ProductionForm(request.POST, request.FILES)
         if form.is_valid():
-            print(request.FILES["filepath"].content_type)
+            # print("========1=======")
+            # print(request.FILES["filepath"].content_type)
             instance = Production(
                 filepath=request.FILES["filepath"],
                 title=request.POST["title"],
                 description=request.POST["description"],
                 production_type=request.POST["production_type"],
             )
-
+            # pdb.set_trace()
             instance.save()
             return redirect("productions")
+        else:
+            print("========2=======")
+            print(form.has_error)
+            print(form.errors)
+            print(request.FILES["filepath"].content_type)
+
+        print("========3=======")
+        print(request.FILES["filepath"].content_type)
+
     else:
         form = ProductionForm()
         # form.use_required_attribute=False

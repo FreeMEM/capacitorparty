@@ -1,5 +1,6 @@
 from django import forms
 from productions.models import Production
+from upload_validator import FileTypeValidator
 
 
 class ProductionForm(forms.ModelForm):
@@ -36,17 +37,20 @@ class ProductionForm(forms.ModelForm):
             # 'filepath': forms.TextInput(attrs = {'class':'form-control','type':'file', 'placeholder':'File'}),
             "filepath": forms.FileInput(
                 attrs={
-                    "accept": [
-                        "application/msword",
-                        "application/pdf",
-                        "application/x-lha",
-                        "image/png",
-                    ],
+                    "accept": "image/jpeg,image/png,application/x-tar,application/x-amiga-disk-format,application/x-adf,application/x-lha",
                     "class": "form-control",
                     "type": "file",
                     "placeholder": "File",
                 }
             ),
+            # "filepath": forms.FileField(
+            # label="",
+            # help_text="Formats accepted: JPEG nd PNG",
+            # required=True,
+            # validators=[
+            #     FileTypeValidator(allowed_types=["image/jpeg", "image/png"])
+            # ],
+            # ),
         }
 
     def __init__(self, *args, **kwargs):

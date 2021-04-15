@@ -3,6 +3,7 @@ from django.utils import timezone
 from tinymce.models import HTMLField
 from defaults.models import BaseModel
 from embed_video.fields import EmbedVideoField
+from upload_validator import FileTypeValidator
 
 # Create your models here.
 
@@ -12,20 +13,20 @@ class Description(BaseModel):
 
 
 class ProductionType(models.TextChoices):
-    GRAPHICS = 1, 'Gráficos'
-    MUSIC = 2, 'Música'
-    DEMO = 3, 'Demo'
-    INTRO = 4, 'Intro'
-    PIXELART = 5, 'Pixel Art'
-    WILDCOMPO = 6, 'Wild compo'
-    GAMEDEV = 7, 'Game development'
-    INVITATION = 8, 'Invitación'
+    GRAPHICS = 1, "Gráficos"
+    MUSIC = 2, "Música"
+    DEMO = 3, "Demo"
+    INTRO = 4, "Intro"
+    PIXELART = 5, "Pixel Art"
+    WILDCOMPO = 6, "Wild compo"
+    GAMEDEV = 7, "Game development"
+    INVITATION = 8, "Invitación"
 
 
 class PrizeType(models.TextChoices):
     CASHPRIZE = 1, "Premio en metálico"
     GIFT = 2, "Regalo"
-    COUPON = 3, 'Cupón'
+    COUPON = 3, "Cupón"
 
 
 class Role(BaseModel):
@@ -37,6 +38,7 @@ class Role(BaseModel):
 
     def __str__(self):
         return self.name
+
 
 class OrganizerRole(BaseModel):
     name = models.CharField(max_length=200)
@@ -57,6 +59,7 @@ class Scener(BaseModel):
 
     def __str__(self):
         return self.name
+
     # roll = models.CharField(
     #     max_length=2,
     #     choices=Roll.choices,
@@ -81,9 +84,9 @@ class ScenersGroup(BaseModel):
 
     class Meta:
         ordering = ["name"]
-    
+
     def __str__(self):
-        return '%s' % (self.name)
+        return "%s" % (self.name)
 
 
 # class File(BaseModel):
@@ -94,20 +97,37 @@ class ScenersGroup(BaseModel):
 #     def __str__(self):
 #         return '%s' % (self.name)
 
+
 class Production(BaseModel):
     title = models.CharField(max_length=200)
     description = HTMLField(blank=True, null=True)
-    group = models.ForeignKey(ScenersGroup, blank=True, null=True, on_delete=models.SET_NULL)
-    production_type = models.CharField(max_length=2,choices=ProductionType.choices, default=ProductionType.GRAPHICS)
+    group = models.ForeignKey(
+        ScenersGroup, blank=True, null=True, on_delete=models.SET_NULL
+    )
+    production_type = models.CharField(
+        max_length=2, choices=ProductionType.choices, default=ProductionType.GRAPHICS
+    )
     authors = models.ManyToManyField(Scener)
     date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
     # filepath = models.ForeignKey(File, on_delete=models.CASCADE, blank=True, null=True)
-    filepath = models.FileField(upload_to="files", blank=True, null=True)
+    filepath = models.FileField(
+        validators=[
+            FileTypeValidator(
+                allowed_types=[
+                    "application/x-amiga-disk-format",
+                    "application/octet-stream",
+                ]
+            ),
+        ],
+        upload_to="files",
+    )
     classification = models.IntegerField(blank=True, null=True)
-    preview = models.ImageField(upload_to='pictures', blank=True, null=True)
+    preview = models.ImageField(upload_to="pictures", blank=True, null=True)
     videolink = EmbedVideoField(max_length=200, blank=True, null=True)
-    edition = models.ForeignKey('editions.Edition', blank=True, null=True, on_delete=models.SET_NULL)
+    edition = models.ForeignKey(
+        "editions.Edition", blank=True, null=True, on_delete=models.SET_NULL
+    )
 
     def publish(self):
         self.published_date = timezone.now()
@@ -122,16 +142,19 @@ class Production(BaseModel):
 
 class Prize(BaseModel):
     name = models.CharField(max_length=200)
-    prize_type = models.CharField(max_length=2,choices=PrizeType.choices, default=PrizeType.CASHPRIZE)
+    prize_type = models.CharField(
+        max_length=2, choices=PrizeType.choices, default=PrizeType.CASHPRIZE
+    )
     value = models.IntegerField(blank=False)
     description = HTMLField(blank=True, null=True)
 
     def __str__(self):
-        return '%s' % (self.name)
+        return "%s" % (self.name)
+
 
 class Compo(BaseModel):
     name = models.CharField(max_length=200)
     rules = HTMLField(blank=True, null=True)
 
     def __str__(self):
-        return '%s' % (self.name)
+        return "%s" % (self.name)
