@@ -3,11 +3,6 @@ from django.utils import timezone
 from tinymce.models import HTMLField
 from defaults.models import BaseModel
 from django.utils.html import mark_safe
-# Create your models here.
-from django.db import models
-from django.utils import timezone
-from tinymce.models import HTMLField
-from defaults.models import BaseModel
 from productions.models import Scener, Description, Production, Organizer
 
 
@@ -16,7 +11,7 @@ class Sponsor(BaseModel):
     description = HTMLField(blank=True, null=True)
 
     def __str__(self):
-        return '%s' % (self.name)
+        return "%s" % (self.name)
 
 
 class Edition(BaseModel):
@@ -29,35 +24,33 @@ class Edition(BaseModel):
     sponsors = models.ManyToManyField(Sponsor, blank=True)
     organizers = models.ManyToManyField(Organizer)
     # logo = models.ForeignKey(File, blank=True, null=True, on_delete=models.SET_NULL)
-    logo = models.ImageField(upload_to='pictures', blank=True, null=True)
-    location =  HTMLField(blank=True, null=True)
+    logo = models.ImageField(upload_to="pictures", blank=True, null=True)
+    location = HTMLField(blank=True, null=True)
     link_google_map = models.CharField(max_length=255, blank=True, null=True)
-    
+
     # pictures = models.ManyToManyField(EditionPicture, blank=True)
-    
 
     def pictures_tag(self):
-        return mark_safe('<img src="%s" width="150" height="150" />' % (self.pictures.img.url))
+        return mark_safe(
+            '<img src="%s" width="150" height="150" />' % (self.pictures.img.url)
+        )
 
     class Meta:
-       ordering = ('-start',)
-
+        ordering = ("-start",)
 
     def __str__(self):
-        return '%s' % (self.name)
+        return "%s" % (self.name)
 
 
 class EditionPicture(BaseModel):
-    img = models.ImageField(upload_to='pictures')
+    img = models.ImageField(upload_to="pictures")
     edition = models.ForeignKey(Edition, on_delete=models.CASCADE)
-    
+
     def image_tag(self):
         return mark_safe('<img src="%s" width="150" height="150" />' % (self.img.url))
 
     def __str__(self):
-        return '%s' % (self.img)
-
-
+        return "%s" % (self.img)
 
 
 # for edition in Edition.objects.all():

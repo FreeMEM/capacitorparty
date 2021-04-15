@@ -1,10 +1,20 @@
 from django.contrib import admin
-from productions.models import Production, ScenersGroup, Scener, Organizer, Role, OrganizerRole, Prize, Compo
+from productions.models import (
+    Production,
+    ScenersGroup,
+    Scener,
+    Organizer,
+    Role,
+    OrganizerRole,
+    Prize,
+    Compo,
+)
 
 # Register your models here.
 
+
 class ProductionAdmin(admin.ModelAdmin):
-    list_display = ("id", "title", "production_type","edition")
+    list_display = ("id", "title", "production_type", "edition")
 
 
 admin.site.register(Production, ProductionAdmin)

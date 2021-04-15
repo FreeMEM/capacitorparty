@@ -9,19 +9,23 @@ class EditionPictureInline(admin.TabularInline):
 
 
 class EditionAdmin(admin.ModelAdmin):
-    list_display = ("id", "name","subtitle", "start")
-    filter_horizontal = ('sponsors',)
-    inlines = [EditionPictureInline,]
+    list_display = ("id", "name", "subtitle", "start")
+    filter_horizontal = ("sponsors",)
+    inlines = [
+        EditionPictureInline,
+    ]
     # readonly_fields = ['pictures_tag']
+
 
 class SponsorAdmin(admin.ModelAdmin):
     list_display = ("id", "name")
 
+
 class EditionPictureAdmin(admin.ModelAdmin):
     # fields = ['image_tag']
-    readonly_fields = ['image_tag']
-    list_display = ['image_tag']
-    
+    readonly_fields = ["image_tag"]
+    list_display = ["image_tag"]
+
 
 admin.site.register(Edition, EditionAdmin)
 admin.site.register(Sponsor, SponsorAdmin)
