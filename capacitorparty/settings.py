@@ -60,7 +60,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [os.path.join(BASE_DIR, "capacitorparty/templates")],
-        "APP_DIRS": False,
+        "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
@@ -146,3 +146,4 @@ TINYMCE_DEFAULT_CONFIG = {
 }
 # TINYMCE_SPELLCHECKER = True
 # TINYMCE_COMPRESSOR = True
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
