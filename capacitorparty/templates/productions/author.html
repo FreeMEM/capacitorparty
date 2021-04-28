@@ -7,11 +7,11 @@
 <section class="bg-dark author">
     <div class="container">
         <div class="row">
-           <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
-              <span class="heading-meta">Scener</span>
-              <span class="heading-meta-sub">Scener</span>
-              <h2>{{ scener.name }}</h2>
-           </div>
+            <div class="col-md-12 col-md-offset-3 col-md-pull-3 text-center">
+                <span class="heading-meta">Scener</span>
+                <span class="heading-meta-sub">Scener</span>
+                <h2>{{ scener.name }}</h2>
+            </div>
         </div>
     </div>
 </section>
@@ -23,15 +23,15 @@
             <div class="col-md-3 mb-12">
                 <div class="row">
                     {% if scener.roles %}
-                    <div >
+                    <div>
                         <span>Roles:</span>
                         {% spaceless %}
                         {% for role in scener.roles.all %}
-                            {% if forloop.first == False %}
-                                <span>, </span><span>{{ role.name }}</span>
-                            {% else %}
-                                {{ role.name }}
-                            {% endif %}
+                        {% if forloop.first == False %}
+                        <span>, </span><span>{{ role.name }}</span>
+                        {% else %}
+                        {{ role.name }}
+                        {% endif %}
                         {% endfor %}
                         {% endspaceless %}
                     </div>
@@ -41,11 +41,11 @@
                     <div>
                         <span>Miembro de:</span>
                         <ul>
-                        {% spaceless %}
-                        {% for group in groups.all %}                                    
+                            {% spaceless %}
+                            {% for group in groups.all %}
                             <li>{{ group.name }}</li>
-                        {% endfor %}
-                        {% endspaceless %}
+                            {% endfor %}
+                            {% endspaceless %}
                         </ul>
                     </div>
                 </div>
@@ -62,30 +62,32 @@
                 <div class="table-responsive">
                     <table class="table">
                         <tbody>
-                        {% for production in productions %}
+                            {% for production in productions %}
                             <tr>
                                 <td>
-                                    <a href="/productions/{{ production.id }}" class="blog-img mb-3"><img src="{{production.preview.url}}" class="img-responsive" alt=""></a>
+                                    <a href="/productions/{{ production.id }}" class="blog-img mb-3"><img
+                                            src="{{production.preview.url}}" class="img-responsive" alt=""></a>
                                     <!-- <a href="/productions/{{ production.id }}" class="blog-img"></a><img src="{{production.preview.url}}" class="img-responsive" alt=""></a> -->
                                 </td>
                                 <td width="80%"><a href="/productions/{{ production.id }}">{{ production.title }}</a>
                                     <p class="text-muted">
-                                        <small>{{ production.get_production_type_display }}. {{ production.edition.name }}</small> 
+                                        <small>{{ production.get_production_type_display }}. {{ production.edition.name
+                                            }}</small>
                                     </p>
                                 </td>
                             </tr>
-                        {% endfor %}
-    
+                            {% endfor %}
+
                         </tbody>
-                        
+
                     </table>
 
                 </div>
-                
+
             </div>
         </div>
     </div>
 </section>
-    <!-- End Author -->
+<!-- End Author -->
 
 {% endblock %}
