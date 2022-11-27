@@ -12,9 +12,11 @@ def index(request):
 def editions(request):
 
     pictures = EditionPicture.objects.select_related('edition').all()
+
     editions = {}
     for picture in pictures:
         editions[picture.edition] = True
+    print(editions)
     return render(request, "editions/editions.html", dict(pictures=pictures, editions=editions.keys()))
 
 
