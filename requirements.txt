@@ -1,6 +1,6 @@
 appdirs==1.4.4
 asgiref==3.3.4
-black==20.8b1
+black==26.10.1
 certifi==2022.12.7
 chardet==4.0.0
 click==7.1.2
